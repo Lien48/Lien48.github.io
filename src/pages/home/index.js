@@ -1,9 +1,11 @@
 import React from "react";
+import Hero from "../../components/hero/index";
 
 const Home = () => {
   return (
+    // Navigation component goes here from the Root component
     <body>
-      <h1>This is Home</h1>
+      <Hero />
     </body>
   );
 };

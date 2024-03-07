@@ -1,0 +1,168 @@
+/*CSS for Intro component */
+.intro-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hello-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.hello-text {
+  border-style: solid;
+  border-radius: 30px;
+  width: fit-content;
+  padding: 7px 14px;
+}
+
+.hello-vector {
+  width: 42px;
+  position: absolute;
+  bottom: 23px;
+  left: 4rem;
+}
+
+.name-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.name-group p {
+  font-size: 4rem;
+  font-family: var(--title-font);
+  font-weight: 600;
+  color: black;
+}
+
+.name-text {
+  display: flex;
+}
+
+.name-vector {
+  position: absolute;
+  top: 7rem;
+  left: -7rem;
+}
+
+#name-text-occupation {
+  font-family: var(--title-font);
+  font-weight: 600;
+  color: black;
+  display: flex;
+  font-size: 4rem;
+  width: --webkit-fill-available;
+}
+
+/*CSS for Intro component - animated occupation section */
+#animated-heading {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/*CSS for IconBar component */
+#icon-bar-text-title {
+  font-weight: 600;
+  font-size: 2rem;
+  font-family: var(--title-font);
+}
+
+.icon-bar {
+  display: flex;
+  flex-direction: column;
+  margin: 6rem 9rem 2rem;
+}
+
+.icon-bar-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.icon-bar p {
+  color: black;
+  font-family: var(--body-font);
+}
+
+/*CSS for PhotoArea component */
+.photo-area {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  justify-content: center;
+  padding-block-start: 20%;
+}
+
+.photo-area img {
+  position: absolute;
+}
+
+#photoLien {
+  width: 40%;
+  max-width: 40%;
+  bottom: 5%;
+}
+
+#vectorEclipse {
+  width: 60%;
+}
+
+/* CSS for PortfolioButton */
+.portfolio-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -5rem;
+}
+
+.portfolio-group {
+  border: solid;
+  border-radius: 70px;
+  display: flex;
+  flex-direction: row;
+  backdrop-filter: blur(7.5px);
+  width: fit-content;
+  position: relative;
+  padding: 0.5rem;
+}
+
+.portfolio-button-active {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem 2rem;
+  align-items: center;
+  border-radius: 70px;
+  border-color: #2685bf;
+  background-color: #2685bf;
+  border-style: none;
+  transition: padding-left 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.portfolio-button-active p {
+  color: white;
+  font: var(--body-font);
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-text {
+  color: white;
+  font: var(--body-font);
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+  background-color: transparent;
+  border-width: 0;
+}

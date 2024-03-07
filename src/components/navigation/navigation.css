@@ -2,27 +2,35 @@
 
 .header {
   position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
+  top: 3rem;
   background-color: transparent;
   z-index: var(--z-fixed);
+  width: 100%;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  align-content: center;
+  justify-content: center;
   position: relative;
   height: var(--header-height);
-  margin: 1rem;
+  margin: auto;
+  border-radius: 70px;
+  background-color: var(--nav-color);
+  padding: 0 2rem;
+  width: fit-content;
 }
 
 .nav__logo {
-  color: var(--first-color);
+  color: var(--title-color);
   transition: color 0.4s;
   font-size: var(--h2-font-size);
   font-family: var(--second-font);
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .nav__toggle,
@@ -42,18 +50,120 @@
   padding: 0.75rem 1.5rem;
 }
 
+@media screen and (min-width: 1150px) {
+  .nav {
+    height: calc(var(--header-height) + 1rem);
+  }
+  .nav__menu {
+    display: flex;
+    align-items: center;
+  }
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5rem;
+  }
+
+  .nav__logo__minimized {
+    display: none;
+  }
+
+  .nav__link {
+    padding: 1rem 2rem;
+  }
+
+  .nav__logo__name {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .nav__logo__name::before,
+  .nav__logo__name::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+
+  .nav__logo__name::before {
+    background-color: #2685bf;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+
+  .nav__logo__name::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 10px;
+    left: 10px;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: #2685bf;
+  }
+
+  .nav__logo__name:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+
+  .nav__logo__name:hover::after {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .nav__logo__name__span {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+
+  .nav__logo__name:hover .nav__logo__name__span {
+    transform: translate3d(-200%, 0, 0);
+  }
+}
+
 @media screen and (max-width: 1150px) {
+  .nav {
+    width: 50%;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
   .nav__menu {
     position: fixed;
     top: 0;
     right: -100%;
-    background-color: hsla(0, 0%, 6%, 0.2);
+    background-color: hsla(0, 0%, 6%, 0.8);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    width: 80%;
+    width: 30%;
     height: 100%;
     padding: 6rem 3rem 0;
     transition: right 0.4s;
+  }
+
+  .nav__list {
+    display: grid;
+    row-gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .nav__logo {
+    display: none;
+  }
+
+  .nav__logo__minimized {
+    color: var(--title-color);
+    transition: color 0.4s;
+    font-size: var(--h2-font-size);
+    font-family: var(--second-font);
   }
 }
 @media screen and (max-width: 300px) {
@@ -62,7 +172,7 @@
   }
 
   .nav__list {
-    row-gap: 1rem;
+    row-gap: 1 rem;
   }
 
   .nav__link,
@@ -79,20 +189,21 @@
   }
 }
 
-.nav__list {
-  display: flex;
-  flex-direction: column;
-  row-gap: 2.5rem;
-}
-
 .nav__link {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
   transition: color 0.4s;
 }
 
+.nav__link__active {
+  background: #2685bf;
+  border-radius: 60px;
+}
+
 .nav__link:hover {
   color: var(--first-color);
+  background: #bbe8f2;
+  border-radius: 60px;
 }
 
 .nav__close {
@@ -121,18 +232,4 @@
   height: 100%;
   padding: 6rem 3rem 0;
   transition: right 0.4s;
-}
-@media screen and (min-width: 1150px) {
-  .nav {
-    height: calc(var(--header-height) + 1rem);
-  }
-  .nav__toggle,
-  .nav__close {
-    display: none;
-  }
-
-  .nav__list {
-    flex-direction: row;
-    column-gap: 2.5rem;
-  }
 }
