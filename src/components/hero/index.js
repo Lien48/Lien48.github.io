@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./hero.css";
+import "animate.css";
+//CSS animation library sourced from
+//https://animate.style/
 import HelloVector from "../../assets/Vector Lines Medium.png";
 import NameVector from "../../assets/Vector Lines Large.png";
 import ProfileVector from "../../assets/Profile Icon.png";
@@ -8,7 +11,8 @@ import Eclipse from "../../assets/Blue Eclipse.png";
 import Lien from "../../assets/Lien No Background.png";
 import Arrow from "../../assets/Diagonal Arrow.png";
 import ArrowVector from "../../assets/Background Vectors/Arrow Vector.png";
-import ConsstellationVector from "../../assets/Background Vectors/Constellation Vector.png";
+import CloudVector from "../../assets/Background Vectors/Cloud Vector.png";
+import ConstellationVector from "../../assets/Background Vectors/Constellation Vector.png";
 import FlowerVector from "../../assets/Background Vectors/Flower Vector.png";
 import HeartBalloonVector from "../../assets/Background Vectors/Heart Balloon Vector.png";
 import HeartsVector from "../../assets/Background Vectors/Hearts Vector.png";
@@ -16,6 +20,7 @@ import PaperAirplaneVector from "../../assets/Background Vectors/Paper Airplane 
 import RaincloudVector from "../../assets/Background Vectors/Raincloud Vector.png";
 import SaturnVector from "../../assets/Background Vectors/Saturn Vector.png";
 import ShootingStarVector from "../../assets/Background Vectors/Shooting Star Vector.png";
+import SquigglyHeartVector from "../../assets/Background Vectors/Squiggly Heart Vector.png";
 import SquigglyVector from "../../assets/Background Vectors/Squiggly Vector.png";
 import Squiggly2Vector from "../../assets/Background Vectors/Squiggly2 Vector.png";
 import StarVector from "../../assets/Background Vectors/Star Vector.png";
@@ -24,6 +29,18 @@ import SwirlVector from "../../assets/Background Vectors/Swirl Vector.png";
 import WhirlpoolVector from "../../assets/Background Vectors/Whirlpool Vector.png";
 
 const Hero = () => {
+  //State variables to control when BackgroundVector component appears and Intro component disappears
+  const [isVectorsVisible, setIsVectorVisible] = useState(false);
+
+  // Function to handle mouse enter and mouse leave events within the PhotoArea component
+  const handleMouseEnterPhotoArea = () => {
+    setIsVectorVisible(true);
+  };
+
+  const handleMouseLeavePhotoArea = () => {
+    setIsVectorVisible(false);
+  };
+
   const Intro = () => {
     const occupations = [
       "Entrepreneur",
@@ -61,7 +78,7 @@ const Hero = () => {
     };
 
     return (
-      <div className="intro-group">
+      <div className="intro-group" onMouseEnter={handleMouseLeavePhotoArea}>
         <div className="hello-group">
           <div>
             <p className="hello-text">Hello!</p>
@@ -86,7 +103,7 @@ const Hero = () => {
 
   const IconBar = () => {
     return (
-      <div className="icon-bar">
+      <div className="icon-bar" onMouseEnter={handleMouseLeavePhotoArea}>
         <div className="icon-bar-icons">
           <img
             src={RocketVector}
@@ -111,9 +128,12 @@ const Hero = () => {
 
   const PhotoArea = () => {
     return (
-      <div className="photo-area">
-        <img src={Eclipse} id="vectorEclipse" />
-        <img src={Lien} id="photoLien" />
+      <div>
+        <div className="photo-area" onMouseEnter={handleMouseEnterPhotoArea}>
+          <img src={Eclipse} id="vectorEclipse" />
+          <img src={Lien} id="photoLien" />
+        </div>
+        <PortfolioButton />
       </div>
     );
   };
@@ -177,12 +197,65 @@ const Hero = () => {
     );
   };
 
+  const BackgroundVectors = () => {
+    return (
+      <div className={`vector-wrapper${isVectorsVisible ? "" : "-inactive"}`}>
+        <img src={HeartsVector} id="heartsVector" />
+        <img src={CloudVector} id="cloudVector" />
+        <img src={SwirlVector} id="swirlVectorLeftTop" />
+        <img src={SwirlVector} id="swirlVectorRightTop" />
+        <img src={SwirlVector} id="swirlVectorRightBottom" />
+        <img src={SwirlVector} id="swirlVectorLeftBottom" />
+        <img src={SaturnVector} id="saturnVector" />
+        <img src={StarVector} id="starVectorLeft" />
+        <img src={StarVector} id="starVectorRight" />
+        <img src={Star2Vector} id="star2Vector" />
+        <img src={FlowerVector} id="flowerVector" />
+        <img src={ArrowVector} id="arrowVector" />
+        <img src={SquigglyHeartVector} id="squigglyHeartVector" />
+        <img src={Squiggly2Vector} id="squiggly2Vector" />
+        <img src={PaperAirplaneVector} id="paperAirplaneVector" />
+        <img src={ConstellationVector} id="constellationVector" />
+        <img src={HeartBalloonVector} id="heartBalloonVector" />
+        <img src={ShootingStarVector} id="shootingStarVector" />
+        <img src={WhirlpoolVector} id="whirlpoolVector" />
+        <img src={RaincloudVector} id="raincloudVector" />
+      </div>
+    );
+  };
+
   return (
     <div>
-      <Intro />
-      <IconBar />
+      {isVectorsVisible ? (
+        <div className="animate__animated animate__fadeOutUp">
+          <Intro />
+        </div>
+      ) : (
+        <div className="animate__animated animate__fadeInDown">
+          <Intro />
+        </div>
+      )}
+      {isVectorsVisible ? (
+        <div className="animate__animated animate__slideInUp">
+          <div className="icon-bar-shifted">
+            <IconBar />
+          </div>
+        </div>
+      ) : (
+        <div className="animate__animated animate__slideInDown">
+          <IconBar />
+        </div>
+      )}
       <PhotoArea />
-      <PortfolioButton />
+      {isVectorsVisible ? (
+        <div className="animate__animated animate__fadeIn">
+          <BackgroundVectors />
+        </div>
+      ) : (
+        <div className="animate__animated animate__fadeOut">
+          <BackgroundVectors />
+        </div>
+      )}
     </div>
   );
 };
