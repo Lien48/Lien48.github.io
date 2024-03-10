@@ -133,6 +133,7 @@ const Hero = () => {
           <img src={Eclipse} id="vectorEclipse" />
           <img src={Lien} id="photoLien" />
         </div>
+
         <PortfolioButton />
       </div>
     );

@@ -1,0 +1,46 @@
+.button {
+  border-radius: 70px;
+  background-color: #2685bf;
+  color: white;
+  padding: 1vw 2vw;
+  border-color: transparent;
+  font-family: var(--body-font);
+  font-weight: 600;
+  margin: 4vw;
+  font-size: 1.25vw;
+}
+
+.button:hover {
+  background-color: #5fb6d9;
+}
+
+.portfolio-comp-wrapper {
+  background-image: url("../../assets/abstract\ metallic\ blue\ texture\ background.png");
+  height: 878px;
+  border-radius: 70px;
+  position: relative;
+  top: -5rem;
+  z-index: 4;
+  display: flex;
+}
+
+.portfolio-comp-header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: fit-content;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.portfolio-comp-text {
+  padding: 4vw;
+}
+
+.portfolio-comp-text p {
+  color: white;
+  font-family: var(--body-font);
+  font-weight: 600;
+  font-size: 3vw;
+  line-height: 1.5;
+}
