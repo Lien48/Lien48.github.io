@@ -7,26 +7,26 @@ import Home from "./pages/home/index";
 
 // Add react-router-dom imports
 import {
-  Route,
-  RouterProvider,
-  createBrowserRouter,
-  createRoutesFromElements,
+    Route,
+    RouterProvider,
+    createBrowserRouter,
+    createRoutesFromElements,
 } from "react-router-dom";
 
 // create router with JSX Route elements
 const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<Root />}>
-      <Route index element={<Home />} />
-      <Route path="about" element={<About />} />
-      <Route path="projects" element={<Projects />} />
-      <Route path="contact" element={<Contact />} />
-    </Route>
-  )
+    createRoutesFromElements(
+        <Route path="/" element={<Root />}>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="projects" element={<Projects />} />
+            <Route path="contact" element={<Contact />} />
+        </Route>
+    )
 );
 
 function App() {
-  return <RouterProvider router={router} />;
+    return <RouterProvider router={router} />;
 }
 
 export default App;

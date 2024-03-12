@@ -22,6 +22,7 @@
   top: -5rem;
   z-index: 4;
   display: flex;
+  flex-direction: column
 }
 
 .portfolio-comp-header {
@@ -43,4 +44,28 @@
   font-weight: 600;
   font-size: 3vw;
   line-height: 1.5;
+}
+
+/* CSS for PortfolioShowcase component */
+.showcase-wrapper {
+    width: 35%;
+    height: 20vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    margin: 0 5vw;
+    display: flex;
+    align-items: flex-end;
+}
+
+.showcase-wrapper p {
+  color: white;
+  font-family: var(--body-font);
+  font-weight: 700;
+  font-size: xxx-large;
+  backdrop-filter: blur(5px);
+  padding: 1vw;
+  margin: 1vw;
+  border-radius: 50px;
 }
