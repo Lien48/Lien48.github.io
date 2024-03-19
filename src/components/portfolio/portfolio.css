@@ -8,6 +8,7 @@
   font-weight: 600;
   margin: 4vw;
   font-size: 1.25vw;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -56,7 +57,13 @@
     border-radius: 30px;
     margin: 0 5vw;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
+    
+}
+
+#button-arrow {
+  padding: 1vw;
+  align-self: flex-end;
 }
 
 .showcase-wrapper p {
@@ -64,8 +71,56 @@
   font-family: var(--body-font);
   font-weight: 700;
   font-size: xxx-large;
-  backdrop-filter: blur(5px);
-  padding: 1vw;
-  margin: 1vw;
-  border-radius: 50px;
+  border-radius: 20px;
 }
+
+.showcase-portfolio-minimized {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: -webkit-fill-available;
+}
+
+.showcase-portfolio-minimized p {
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+  padding: 0.5vw 1vw;
+  margin: 1vw;
+  background-color: #0000006e;
+}
+
+.showcase-portfolio-maximized {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: -webkit-fill-available;
+  cursor: pointer;
+}
+
+.showcase-portfolio-details {
+  display: flex;
+  flex-direction: column;
+  margin: 1vw;
+  padding: 1vw;
+  border-radius: 30px;
+  background-color: #00000085;
+}
+
+#showcase-portfolio-text {
+  font-size: medium;
+  font-family: var(--body-font);
+  font-weight: 400;
+}
+
+.showcase-portfolio-text-name {
+    color: white;
+    font-family: var(--body-font);
+    font-weight: 700;
+    font-size: xxx-large;
+    border-radius: 50px;
+}
+
