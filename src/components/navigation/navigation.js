@@ -32,7 +32,14 @@ const Navigation = () => {
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `nav__link ${isActive ? "nav__link__active" : ""}`
+                  `nav__link ${
+                    //Nested CSS conditionals required for appropriate padding on nav links
+                    isActive
+                      ? showMenu
+                        ? "nav__link__active__menu"
+                        : "nav__link__active"
+                      : ""
+                  }`
                 }
                 onClick={closeMenuOnMobile}
               >
@@ -43,7 +50,14 @@ const Navigation = () => {
               <NavLink
                 to="projects"
                 className={({ isActive }) =>
-                  `nav__link ${isActive ? "nav__link__active" : ""}`
+                  `nav__link ${
+                    //Nested CSS conditionals required for appropriate padding on nav links
+                    isActive
+                      ? showMenu
+                        ? "nav__link__active__menu"
+                        : "nav__link__active"
+                      : ""
+                  }`
                 }
                 onClick={closeMenuOnMobile}
               >
@@ -70,7 +84,14 @@ const Navigation = () => {
               <NavLink
                 to="about"
                 className={({ isActive }) =>
-                  `nav__link ${isActive ? "nav__link__active" : ""}`
+                  `nav__link ${
+                    //Nested CSS conditionals required for appropriate padding on nav links
+                    isActive
+                      ? showMenu
+                        ? "nav__link__active__menu"
+                        : "nav__link__active"
+                      : ""
+                  }`
                 }
                 onClick={closeMenuOnMobile}
               >
@@ -81,8 +102,16 @@ const Navigation = () => {
               <NavLink
                 to="contact"
                 className={({ isActive }) =>
-                  `nav__link ${isActive ? "nav__link__active" : ""}`
+                  `nav__link ${
+                    //Nested CSS conditionals required for appropriate padding on nav links
+                    isActive
+                      ? showMenu
+                        ? "nav__link__active__menu"
+                        : "nav__link__active"
+                      : ""
+                  }`
                 }
+                onClick={closeMenuOnMobile}
               >
                 Contact
               </NavLink>

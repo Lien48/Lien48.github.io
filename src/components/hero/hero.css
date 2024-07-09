@@ -1,27 +1,49 @@
+/* CSS for entire Hero component */
+.hero-wrapper {
+  padding-top: 7rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .hero-wrapper {
+    padding-top: 5rem;
+  }
+}
+
 /*CSS for Intro component */
 .intro-group {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2vw;
 }
 
 .hello-group {
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 1vw;
 }
 
 .hello-text {
   border-style: solid;
   border-radius: 30px;
   width: fit-content;
-  padding: 7px 14px;
+  padding: 5px 15px;
+  font-size: 1.25rem;
+}
+
+.hello-text {
+  border-style: solid;
+  border-radius: 30px;
+  width: fit-content;
+  padding: 5px 15px;
+  font-size: 1rem;
 }
 
 .hello-vector {
-  width: 42px;
   position: absolute;
-  bottom: 23px;
-  left: 4rem;
+  bottom: 1.25rem;
+  left: 4.25rem;
+  width: 2.75rem;
+  height: auto;
 }
 
 .name-group {
@@ -32,7 +54,7 @@
 }
 
 .name-group p {
-  font-size: 4rem;
+  font-size: 4vw;
   font-family: var(--title-font);
   font-weight: 600;
   color: black;
@@ -44,8 +66,10 @@
 
 .name-vector {
   position: absolute;
-  top: 7rem;
-  left: -7rem;
+  top: 7vw;
+  left: -7vw;
+  width: 7vw;
+  height: auto;
 }
 
 #name-text-occupation {
@@ -53,7 +77,7 @@
   font-weight: 600;
   color: black;
   display: flex;
-  font-size: 4rem;
+  font-size: 4vw;
   width: --webkit-fill-available;
 }
 
@@ -70,20 +94,20 @@
 /*CSS for IconBar component */
 #icon-bar-text-title {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-family: var(--title-font);
 }
 
 .icon-bar {
   display: flex;
   flex-direction: column;
-  margin: 6rem 9rem 2rem;
+  margin: 6vw 20% 2vw;
   z-index: 3;
 }
 
 .icon-bar-shifted {
   position: relative;
-  bottom: 15rem;
+  bottom: 19vw;
 }
 
 .icon-bar-icons {
@@ -96,6 +120,7 @@
 .icon-bar p {
   color: black;
   font-family: var(--body-font);
+  font-size: 1rem;
 }
 
 /*CSS for PhotoArea component */
@@ -121,6 +146,7 @@
 #vectorEclipse {
   width: 60%;
   z-index: 0;
+  min-width: none;
 }
 
 /* CSS for PortfolioButton */
@@ -196,6 +222,11 @@
 }
 
 @media screen and (min-width: 2200px) {
+  .photo-area-shifted {
+    margin-top: -15vw;
+  }
+
+  /* Popout Vectors */
   #photoLien {
     width: 20%;
     max-width: 25%;
@@ -633,6 +664,16 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .icon-bar {
+    margin: 6vw 10% 2vw;
+  }
+
+  .hello-vector {
+    left: 4.5rem;
+    width: 2rem;
+  }
+
+  /*Vector configuration section */
   .vector-wrapper img {
     transform: scale(0.7);
   }
@@ -685,5 +726,31 @@
 @media screen and (max-width: 768px) {
   .vector-wrapper img {
     display: none;
+  }
+
+  .hello-text {
+    font-size: 0.75rem;
+  }
+
+  .hello-vector {
+    left: 3.75rem;
+    width: 1.5rem;
+  }
+
+  .photo-area-shifted {
+    margin-top: -20vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hello-text {
+    padding: 5px 10px;
+    font-size: 0.5rem;
+  }
+
+  .hello-vector {
+    left: 2.5rem;
+    width: 1.25rem;
+    bottom: 1rem;
   }
 }
