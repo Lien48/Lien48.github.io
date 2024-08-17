@@ -22,8 +22,8 @@ jobs:
         node-version: 22.x
         cache: 'npm'
     - run: |
-        git config --global user.name lienchueh
-        git config --global user.email "lien4888@gmail.com"
+        git config --global user.name $user_name
+        git config --global user.email $user_email
         git remote set-url origin https://${github_token}@github.com/${repository}
         npm ci
         npm run deploy
