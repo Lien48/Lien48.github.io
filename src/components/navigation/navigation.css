@@ -135,7 +135,7 @@ a {
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .nav {
     width: 90%;
     justify-content: space-between;
@@ -148,9 +148,9 @@ a {
     background-color: hsla(0, 0%, 6%, 0.8);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    width: 30%;
+    width: fit-content;
     height: 100%;
-    padding: 6rem 3rem 0;
+    padding: 4rem 2rem 0;
     transition: right 0.4s;
   }
 
