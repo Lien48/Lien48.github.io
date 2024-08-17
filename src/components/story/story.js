@@ -1,12 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./story.css";
 import "animate.css";
 //CSS animation library sourced from
 //https://animate.style/
 import Timeline from "../../assets/Timeline.png";
-import timelineTop from "../../assets/Timeline Top.png";
-import timelineBottom from "../../assets/Timeline Bottom.png";
-import timelineMiddle from "../../assets/Timeline Middle.png";
 
 const Story = () => {
     return (

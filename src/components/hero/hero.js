@@ -82,7 +82,7 @@ const Hero = () => {
                         <p className="hello-text">Hello!</p>
                     </div>
                     <div>
-                        <img src={HelloVector} className="hello-vector" />
+                        <img src={HelloVector} className="hello-vector" alt="decorativeVector" />
                     </div>
                 </div>
                 <div className="name-group">
@@ -106,8 +106,13 @@ const Hero = () => {
                     <img
                         src={RocketVector}
                         style={{ width: "2.5rem", height: "auto", marginBottom: "1rem" }}
+                        alt="decorativeVector"
                     />
-                    <img src={ProfileVector} style={{ width: "2.5rem", height: "auto" }} />
+                    <img
+                        src={ProfileVector}
+                        style={{ width: "2.5rem", height: "auto" }}
+                        alt="decorativeVector"
+                    />
                 </div>
                 <div className="icon-bar-icons">
                     <p style={{ width: "30%" }}>
@@ -128,8 +133,8 @@ const Hero = () => {
         return (
             <div className={isVectorsVisible ? "photo-area-shifted" : ""}>
                 <div className="photo-area" onMouseEnter={handleMouseEnterPhotoArea}>
-                    <img src={Eclipse} id="vectorEclipse" />
-                    <img src={Lien} id="photoLien" />
+                    <img src={Eclipse} id="vectorEclipse" alt="decorativeVector" />
+                    <img src={Lien} id="photoLien" alt="photoLien" />
                 </div>
 
                 <PortfolioButton />
@@ -169,7 +174,11 @@ const Hero = () => {
                             onMouseEnter={handleMouseEnter}
                             onClick={handleRedirectPortfolio}>
                             <p>Portfolio</p>
-                            <img src={Arrow} style={{ width: "20px", marginLeft: "10px" }} />
+                            <img
+                                src={Arrow}
+                                style={{ width: "20px", marginLeft: "10px" }}
+                                alt="decorativeVector"
+                            />
                         </button>
                     ) : (
                         <button className="portfolio-text" onMouseEnter={handleMouseEnter}>
@@ -186,7 +195,11 @@ const Hero = () => {
                             onMouseEnter={handleMouseLeave}
                             onClick={handleRedirectConnect}>
                             <p>Connect</p>
-                            <img src={Arrow} style={{ width: "20px", marginLeft: "10px" }} />
+                            <img
+                                src={Arrow}
+                                style={{ width: "20px", marginLeft: "10px" }}
+                                alt="decorativeVector"
+                            />
                         </button>
                     )}
                 </div>
@@ -197,26 +210,26 @@ const Hero = () => {
     const BackgroundVectors = () => {
         return (
             <div className={`vector-wrapper${isVectorsVisible ? "" : "-inactive"}`}>
-                <img src={HeartsVector} id="heartsVector" />
-                <img src={CloudVector} id="cloudVector" />
-                <img src={SwirlVector} id="swirlVectorLeftTop" />
-                <img src={SwirlVector} id="swirlVectorRightTop" />
-                <img src={SwirlVector} id="swirlVectorRightBottom" />
-                <img src={SwirlVector} id="swirlVectorLeftBottom" />
-                <img src={SaturnVector} id="saturnVector" />
-                <img src={StarVector} id="starVectorLeft" />
-                <img src={StarVector} id="starVectorRight" />
-                <img src={Star2Vector} id="star2Vector" />
-                <img src={FlowerVector} id="flowerVector" />
-                <img src={ArrowVector} id="arrowVector" />
-                <img src={SquigglyHeartVector} id="squigglyHeartVector" />
-                <img src={Squiggly2Vector} id="squiggly2Vector" />
-                <img src={PaperAirplaneVector} id="paperAirplaneVector" />
-                <img src={ConstellationVector} id="constellationVector" />
-                <img src={HeartBalloonVector} id="heartBalloonVector" />
-                <img src={ShootingStarVector} id="shootingStarVector" />
-                <img src={WhirlpoolVector} id="whirlpoolVector" />
-                <img src={RaincloudVector} id="raincloudVector" />
+                <img src={HeartsVector} id="heartsVector" alt="decorativeVector" />
+                <img src={CloudVector} id="cloudVector" alt="decorativeVector" />
+                <img src={SwirlVector} id="swirlVectorLeftTop" alt="decorativeVector" />
+                <img src={SwirlVector} id="swirlVectorRightTop" alt="decorativeVector" />
+                <img src={SwirlVector} id="swirlVectorRightBottom" alt="decorativeVector" />
+                <img src={SwirlVector} id="swirlVectorLeftBottom" alt="decorativeVector" />
+                <img src={SaturnVector} id="saturnVector" alt="decorativeVector" />
+                <img src={StarVector} id="starVectorLeft" alt="decorativeVector" />
+                <img src={StarVector} id="starVectorRight" alt="decorativeVector" />
+                <img src={Star2Vector} id="star2Vector" alt="decorativeVector" />
+                <img src={FlowerVector} id="flowerVector" alt="decorativeVector" />
+                <img src={ArrowVector} id="arrowVector" alt="decorativeVector" />
+                <img src={SquigglyHeartVector} id="squigglyHeartVector" alt="decorativeVector" />
+                <img src={Squiggly2Vector} id="squiggly2Vector" alt="decorativeVector" />
+                <img src={PaperAirplaneVector} id="paperAirplaneVector" alt="decorativeVector" />
+                <img src={ConstellationVector} id="constellationVector" alt="decorativeVector" />
+                <img src={HeartBalloonVector} id="heartBalloonVector" alt="decorativeVector" />
+                <img src={ShootingStarVector} id="shootingStarVector" alt="decorativeVector" />
+                <img src={WhirlpoolVector} id="whirlpoolVector" alt="decorativeVector" />
+                <img src={RaincloudVector} id="raincloudVector" alt="decorativeVector" />
             </div>
         );
     };

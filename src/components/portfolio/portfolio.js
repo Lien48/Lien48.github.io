@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./portfolio.css";
 import "animate.css";
 //CSS animation library sourced from
