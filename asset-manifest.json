@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/lienchueh.github.io/static/css/main.f72a3a6e.css",
+    "main.js": "/lienchueh.github.io/static/js/main.96052acc.js",
+    "static/js/453.b21437c2.chunk.js": "/lienchueh.github.io/static/js/453.b21437c2.chunk.js",
+    "static/media/Lien No Background.png": "/lienchueh.github.io/static/media/Lien No Background.bafb29abe7cb86af11f6.png",
+    "static/media/TN100D Dashboard.svg": "/lienchueh.github.io/static/media/TN100D Dashboard.355e83194b9b157b3a2aea3fa634c48f.svg",
+    "static/media/abstract metallic blue texture background.png": "/lienchueh.github.io/static/media/abstract metallic blue texture background.860a1e53ed4ea580178c.png",
+    "index.html": "/lienchueh.github.io/index.html",
+    "main.f72a3a6e.css.map": "/lienchueh.github.io/static/css/main.f72a3a6e.css.map",
+    "main.96052acc.js.map": "/lienchueh.github.io/static/js/main.96052acc.js.map",
+    "453.b21437c2.chunk.js.map": "/lienchueh.github.io/static/js/453.b21437c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f72a3a6e.css",
+    "static/js/main.96052acc.js"
+  ]
+}
