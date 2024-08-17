@@ -17,7 +17,7 @@
 
 .portfolio-comp-wrapper {
   background-image: url("../../assets/abstract\ metallic\ blue\ texture\ background.png");
-  height: 878px;
+  height: 740px; /* Default value is 878px*/
   border-radius: 70px;
   position: relative;
   top: -5rem;
@@ -47,9 +47,13 @@
   line-height: 1.5;
 }
 
+/* Link wrapper for PortfolioShowcase component */
+.portfolio-comp-header a {
+  width: 50%;
+}
+
 /* CSS for PortfolioShowcase component */
 .showcase-wrapper {
-    width: 35%;
     height: 20vw;
     background-position: center;
     background-size: cover;
@@ -80,15 +84,15 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: -webkit-fill-available;
+  height: auto;
 }
 
 .showcase-portfolio-minimized p {
   backdrop-filter: blur(5px);
   border-radius: 30px;
-  padding: 0.5vw 1vw;
+  padding: 0.5vw 1.5vw;
   margin: 1vw;
-  background-color: #0000006e;
+  background-color: #000000c9;
 }
 
 .showcase-portfolio-maximized {
@@ -97,7 +101,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: -webkit-fill-available;
+  height: auto;
   cursor: pointer;
 }
 
@@ -107,7 +111,7 @@
   margin: 1vw;
   padding: 1vw;
   border-radius: 30px;
-  background-color: #00000085;
+  background-color: #000000c9;
 }
 
 #showcase-portfolio-text {
@@ -124,3 +128,25 @@
     border-radius: 50px;
 }
 
+/* CSS for BubbleCallOuts component */
+.bubbleCallout-comp-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 2vw;
+}
+
+.bubbleCallout-comp-wrapper p {
+  margin: 1vw 1vw 0;
+  background-color: #dbe2ec;
+  width: fit-content;
+  padding: 0 1vw;
+  height: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  color: black;
+  font-family: var(--body-font);
+  font-weight: 500;
+}
