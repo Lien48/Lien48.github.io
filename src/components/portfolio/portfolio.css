@@ -17,13 +17,15 @@
 
 .portfolio-comp-wrapper {
   background-image: url("../../assets/abstract\ metallic\ blue\ texture\ background.png");
-  height: 740px; /* Default value is 878px*/
-  border-radius: 70px;
+  height: fit-content; 
+  border-radius: 30px;
   position: relative;
   top: -5rem;
   z-index: 4;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  margin: 0 2rem;
+  padding-bottom: 2rem;
 }
 
 .portfolio-comp-header {
@@ -74,7 +76,7 @@
   color: white;
   font-family: var(--body-font);
   font-weight: 700;
-  font-size: xxx-large;
+  font-size: 2rem;
   border-radius: 20px;
 }
 
@@ -84,7 +86,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .showcase-portfolio-minimized p {
@@ -101,7 +103,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: auto;
+  height: 100%;
   cursor: pointer;
 }
 
@@ -149,4 +151,10 @@
   color: black;
   font-family: var(--body-font);
   font-weight: 500;
+}
+
+@media screen and (max-width: 425px) {
+  .portfolio-comp-wrapper {
+    top: -2rem;
+  }
 }

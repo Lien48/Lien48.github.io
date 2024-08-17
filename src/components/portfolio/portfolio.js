@@ -80,7 +80,7 @@ const Portfolio = () => {
     };
 
     return (
-        <div className="portfolio-comp-wrapper">
+        <div className="portfolio-comp-wrapper" id="portfolioLink">
             <div className="portfolio-comp-header">
                 <div className="portfolio-comp-text">
                     <p>
@@ -95,18 +95,15 @@ const Portfolio = () => {
                 <a href="https://thenext100days.app">
                     <PortfolioShowcase
                         style={{ backgroundImage: `url("${TN100D}")` }}
-                        name="The Next 100 Days"
-                        description="Productivity app centered around achieving 100 days of mindfulness, self-care, and productivity."
+                        name="Trufflow"
+                        description="App monitoring stack for IT value management."
                     />
                 </a>
                 <a href="https://thenext100days.app">
                     <PortfolioShowcase
                         style={{ backgroundImage: `url("${TN100D}")` }}
-                        name="TBD"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                                    congue interdum ligula a dignissim. Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Sed lobortis orci elementum egestas
-                                    lobortis."
+                        name="The Next 100 Days"
+                        description="Productivity app to facilitate 100 days of mindfulness, self-care, and productivity."
                     />
                 </a>
             </div>

@@ -117,6 +117,12 @@
   align-items: baseline;
 }
 
+.icon-bar-icons img {
+  width: 2.5rem; 
+  height: auto; 
+  margin-bottom: 1rem;
+}
+
 .icon-bar p {
   color: black;
   font-family: var(--body-font);
@@ -181,6 +187,11 @@
   border-style: none;
   transition: padding-left 0.3s ease-in-out;
   cursor: pointer;
+}
+
+.portfolio-button-active img {
+  width: 20px; 
+  margin-left: 10px;
 }
 
 .portfolio-button-active p {
@@ -721,6 +732,34 @@
     right: 8rem;
     rotate: 325deg;
   }
+
+  /*CSS for Intro component */
+  .name-group p {
+    font-size: 3rem;
+  }
+
+  #name-text-occupation {
+    font-size: 3rem;
+  }
+
+  /*CSS for IconBar component */
+  #icon-bar-text-title {
+    font-size: 1.75rem;
+  }
+
+  .icon-bar p {
+    font-size: 0.9rem;
+  }
+
+  /* CSS for PortfolioButton */
+  .portfolio-button-active p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .portfolio-group button {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -740,6 +779,47 @@
   .photo-area-shifted {
     margin-top: -20vw;
   }
+
+  /*CSS for Intro component */
+   .name-group p {
+    font-size: 2rem;
+  }
+
+  #name-text-occupation {
+    font-size: 2rem;
+  }
+
+  /*CSS for IconBar component */
+   #icon-bar-text-title {
+    font-size: 1.25rem;
+  }
+
+  .icon-bar p {
+    font-size: 0.75rem;
+  }
+
+  .icon-bar-icons img {
+    width: 1.75rem; 
+  }
+
+  /* CSS for PortfolioButton */ 
+  .portfolio-button-active {
+    padding: 0.25rem 1rem;
+  }
+
+  .portfolio-button-active p {
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+  }
+
+  .portfolio-button-active img {
+    width: 17px;
+  }
+
+  .portfolio-group button {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -752,5 +832,40 @@
     left: 2.5rem;
     width: 1.25rem;
     bottom: 1rem;
+  }
+
+  /*CSS for Intro component */
+  .name-group p {
+    font-size: 1.5rem;
+  }
+
+  #name-text-occupation {
+    font-size: 1.5rem;
+  }
+
+  /*CSS for IconBar component */
+  #icon-bar-text-title {
+    font-size: 1rem;
+  }
+
+  .icon-bar p {
+    font-size: 0.6rem;
+  }
+
+  .icon-bar-icons img {
+    display: none; 
+  }
+
+  /* CSS for PortfolioButton */
+  .portfolio-group {
+    border: none;
+  }
+
+  .portfolio-button-active {
+    display: none;
+  }
+
+  .portfolio-text {
+    display: none
   }
 }

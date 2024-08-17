@@ -1,6 +1,5 @@
 import "./App.css";
 import Root from "./components/root";
-import Contact from "./pages/contact";
 import About from "./pages/about/index";
 import Projects from "./pages/projects";
 import Home from "./pages/home/index";
@@ -20,7 +19,6 @@ const router = createBrowserRouter(
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="projects" element={<Projects />} />
-            <Route path="contact" element={<Contact />} />
         </Route>
     )
 );

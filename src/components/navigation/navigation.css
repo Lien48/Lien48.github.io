@@ -50,10 +50,6 @@
   padding: 0.75rem 1.5rem;
 }
 
-a {
-  padding: 5px 15px;
-}
-
 @media screen and (min-width: 1024px) {
   .nav {
     height: calc(var(--header-height) + 1rem);
@@ -135,6 +131,65 @@ a {
   }
 }
 
+.nav__link {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  transition: color 0.4s;
+}
+
+.nav__item a {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  transition: color 0.4s;
+}
+
+.nav__link__active {
+  background: #2685bf;
+  border-radius: 60px;
+}
+
+.nav__link__active__menu {
+  background: #2685bf;
+  border-radius: 60px;
+  padding: 5px 20px;
+}
+
+.nav__link:hover {
+  color: var(--first-color);
+  background: #bbe8f2;
+  border-radius: 60px;
+}
+
+.nav__item:hover {
+  color: var(--first-color);
+  background: #bbe8f2;
+  border-radius: 60px;
+}
+
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+
+.show-menu {
+  right: 0;
+}
+
+.nav__menu_mobile {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  background-color: hsla(0, 0%, 6%, 0.2);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  width: 80%;
+  height: 100%;
+  padding: 6rem 3rem 0;
+  transition: right 0.4s;
+}
+
+
 @media screen and (max-width: 1024px) {
   .nav {
     width: 90%;
@@ -194,48 +249,3 @@ a {
   }
 }
 
-.nav__link {
-  color: var(--title-color);
-  font-weight: var(--font-semi-bold);
-  transition: color 0.4s;
-}
-
-.nav__link__active {
-  background: #2685bf;
-  border-radius: 60px;
-}
-
-.nav__link__active__menu {
-  background: #2685bf;
-  border-radius: 60px;
-  padding: 5px 20px;
-}
-
-.nav__link:hover {
-  color: var(--first-color);
-  background: #bbe8f2;
-  border-radius: 60px;
-}
-
-.nav__close {
-  position: absolute;
-  top: 1rem;
-  right: 1.5rem;
-}
-
-.show-menu {
-  right: 0;
-}
-
-.nav__menu_mobile {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  background-color: hsla(0, 0%, 6%, 0.2);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  width: 80%;
-  height: 100%;
-  padding: 6rem 3rem 0;
-  transition: right 0.4s;
-}

@@ -43,8 +43,8 @@ const Navigation = () => {
                             </NavLink>
                         </li>
                         <li className="nav__item">
-                            <NavLink
-                                to="projects"
+                            <a
+                                href="#portfolioLink"
                                 className={({ isActive }) =>
                                     `nav__link ${
                                         //Nested CSS conditionals required for appropriate padding on nav links
@@ -57,10 +57,13 @@ const Navigation = () => {
                                 }
                                 onClick={closeMenuOnMobile}>
                                 Projects
-                            </NavLink>
+                            </a>
                         </li>
                     </ul>
-                    <NavLink to="contact" className="nav__logo">
+                    <NavLink
+                        to="https://ca.linkedin.com/in/lienchueh"
+                        target="_blank"
+                        className="nav__logo">
                         <img src={Icon} alt="icon" />
                         <div className="nav__logo__name" data-replace="Let's Chat!">
                             <span className="nav__logo__name__span" style={{ display: "flex" }}>
@@ -91,7 +94,8 @@ const Navigation = () => {
                         </li>
                         <li className="nav__item">
                             <NavLink
-                                to="contact"
+                                to="https://ca.linkedin.com/in/lienchueh"
+                                target="_blank"
                                 className={({ isActive }) =>
                                     `nav__link ${
                                         //Nested CSS conditionals required for appropriate padding on nav links

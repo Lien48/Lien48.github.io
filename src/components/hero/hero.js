@@ -89,6 +89,7 @@ const Hero = () => {
                     <div className="name-text">
                         <p>I'm </p>
                         <p style={{ marginLeft: "1.5vw", color: "#2685BF" }}>Lien</p>
+                        <a href="#portfolioLink">"Link to Portfolio"</a>
                         <p>,</p>
                     </div>
                     <div id="name-text-occupation">
@@ -105,18 +106,14 @@ const Hero = () => {
                 <div className="icon-bar-icons">
                     <img
                         src={RocketVector}
-                        style={{ width: "2.5rem", height: "auto", marginBottom: "1rem" }}
                         alt="decorativeVector"
+                        style={{ marginBottom: "1rem" }}
                     />
-                    <img
-                        src={ProfileVector}
-                        style={{ width: "2.5rem", height: "auto" }}
-                        alt="decorativeVector"
-                    />
+                    <img src={ProfileVector} alt="decorativeVector" />
                 </div>
                 <div className="icon-bar-icons">
                     <p style={{ width: "30%" }}>
-                        Chartered Professional Accountant turned developer and entrepreneur.
+                        Chartered Professional Accountant and entrepreneur.
                     </p>
                     <div style={{ textAlign: "right" }}>
                         <p id="icon-bar-text-title">7 Years</p>
@@ -174,11 +171,7 @@ const Hero = () => {
                             onMouseEnter={handleMouseEnter}
                             onClick={handleRedirectPortfolio}>
                             <p>Portfolio</p>
-                            <img
-                                src={Arrow}
-                                style={{ width: "20px", marginLeft: "10px" }}
-                                alt="decorativeVector"
-                            />
+                            <img src={Arrow} alt="decorativeVector" />
                         </button>
                     ) : (
                         <button className="portfolio-text" onMouseEnter={handleMouseEnter}>
@@ -195,11 +188,7 @@ const Hero = () => {
                             onMouseEnter={handleMouseLeave}
                             onClick={handleRedirectConnect}>
                             <p>Connect</p>
-                            <img
-                                src={Arrow}
-                                style={{ width: "20px", marginLeft: "10px" }}
-                                alt="decorativeVector"
-                            />
+                            <img src={Arrow} alt="decorativeVector" />
                         </button>
                     )}
                 </div>
