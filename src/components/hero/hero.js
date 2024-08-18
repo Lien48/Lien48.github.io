@@ -41,13 +41,7 @@ const Hero = () => {
     };
 
     const Intro = () => {
-        const occupations = [
-            "Entrepreneur",
-            "Accountant",
-            "No Code Developer",
-            "Web Developer",
-            "Digital Creator",
-        ];
+        const occupations = ["Entrepreneur", "Accountant", "No Code Developer", "Web Developer"];
 
         const WordFader = ({ occupations }) => {
             const [currentIndex, setCurrentIndex] = useState(0);
@@ -89,7 +83,6 @@ const Hero = () => {
                     <div className="name-text">
                         <p>I'm </p>
                         <p style={{ marginLeft: "1.5vw", color: "#2685BF" }}>Lien</p>
-                        <a href="#portfolioLink">"Link to Portfolio"</a>
                         <p>,</p>
                     </div>
                     <div id="name-text-occupation">

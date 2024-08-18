@@ -20,43 +20,43 @@ const Navigation = () => {
         }
     };
 
+    /* Saving NavLink example of how to route to a different page
+        <NavLink
+            to="/"
+            className={({ isActive }) =>
+                `nav__link ${
+                //Nested CSS conditionals required for appropriate padding on nav links
+                    isActive
+                    ? showMenu
+                    ? "nav__link__active__menu"
+                    : "nav__link__active"
+                    : ""
+                    }`
+                    }
+                onClick={closeMenuOnMobile}>
+                Home
+                </NavLink>
+    */
+
     return (
         <header className="header">
             <nav className="nav container">
                 <div className={`nav__menu ${showMenu ? "show-menu" : ""}`} id="nav-menu">
                     <ul className="nav__list">
                         <li className="nav__item">
-                            <NavLink
-                                to="/"
-                                className={({ isActive }) =>
-                                    `nav__link ${
-                                        //Nested CSS conditionals required for appropriate padding on nav links
-                                        isActive
-                                            ? showMenu
-                                                ? "nav__link__active__menu"
-                                                : "nav__link__active"
-                                            : ""
-                                    }`
-                                }
+                            <a
+                                href="#portfolioLink"
+                                className="nav__link"
                                 onClick={closeMenuOnMobile}>
-                                Home
-                            </NavLink>
+                                Projects
+                            </a>
                         </li>
                         <li className="nav__item">
                             <a
-                                href="#portfolioLink"
-                                className={({ isActive }) =>
-                                    `nav__link ${
-                                        //Nested CSS conditionals required for appropriate padding on nav links
-                                        isActive
-                                            ? showMenu
-                                                ? "nav__link__active__menu"
-                                                : "nav__link__active"
-                                            : ""
-                                    }`
-                                }
+                                href="#experienceLink"
+                                className="nav__link"
                                 onClick={closeMenuOnMobile}>
-                                Projects
+                                Experience
                             </a>
                         </li>
                     </ul>
@@ -76,21 +76,9 @@ const Navigation = () => {
                     </NavLink>
                     <ul className="nav__list">
                         <li className="nav__item">
-                            <NavLink
-                                to="about"
-                                className={({ isActive }) =>
-                                    `nav__link ${
-                                        //Nested CSS conditionals required for appropriate padding on nav links
-                                        isActive
-                                            ? showMenu
-                                                ? "nav__link__active__menu"
-                                                : "nav__link__active"
-                                            : ""
-                                    }`
-                                }
-                                onClick={closeMenuOnMobile}>
+                            <a href="#aboutLink" className="nav__link" onClick={closeMenuOnMobile}>
                                 About
-                            </NavLink>
+                            </a>
                         </li>
                         <li className="nav__item">
                             <NavLink

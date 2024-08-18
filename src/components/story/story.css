@@ -5,9 +5,9 @@
 }
 
 .story-comp-wrapper h1 {
-    font-size: 3vw;
+    font-size: 3rem;
     font-family: var(--title-font);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 #story-title {
@@ -37,3 +37,32 @@
 .story-timeline-textbox h2 {
     color: #344054;
 }
+
+/* CSS for BubbleCallOuts component */
+.bubbleCallout-comp-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 0 2vw 3vw 2vw;
+  }
+  
+  .bubbleCallout-comp-wrapper p {
+    margin: 1vw 1vw 0;
+    background-color: #dbe2ec;
+    width: fit-content;
+    padding: 0 1vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color: black;
+    font-family: var(--body-font);
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 768px) {
+    .story-comp-wrapper h1 {
+        font-size: 2.5rem;
+    }
+  }

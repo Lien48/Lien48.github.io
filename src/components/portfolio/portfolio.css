@@ -38,7 +38,7 @@
 }
 
 .portfolio-comp-text {
-  padding: 4vw;
+  padding: 3vw 4vw 2vw 4vw;
 }
 
 .portfolio-comp-text p {
@@ -50,7 +50,7 @@
 }
 
 /* Link wrapper for PortfolioShowcase component */
-.portfolio-comp-header a {
+.portfolio-comp-header-inner {
   width: 50%;
 }
 
@@ -60,11 +60,10 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 30px;
+    border-radius: 10px;
     margin: 0 5vw;
     display: flex;
     align-items: flex-start;
-    
 }
 
 #button-arrow {
@@ -80,6 +79,11 @@
   border-radius: 20px;
 }
 
+.showcase-wrapper img {
+  width: 6vw;
+  height: auto;
+}
+
 .showcase-portfolio-minimized {
   display: flex;
   align-items: flex-start;
@@ -89,12 +93,13 @@
   height: 100%;
 }
 
-.showcase-portfolio-minimized p {
+#showcase-portfolio-minimized-title {
   backdrop-filter: blur(5px);
   border-radius: 30px;
   padding: 0.5vw 1.5vw;
   margin: 1vw;
   background-color: #000000c9;
+  width: fit-content;
 }
 
 .showcase-portfolio-maximized {
@@ -112,7 +117,7 @@
   flex-direction: column;
   margin: 1vw;
   padding: 1vw;
-  border-radius: 30px;
+  border-radius: 10px;
   background-color: #000000c9;
 }
 
@@ -130,31 +135,62 @@
     border-radius: 50px;
 }
 
-/* CSS for BubbleCallOuts component */
-.bubbleCallout-comp-wrapper {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  padding: 2vw;
+@media screen and (max-width: 1024px) {
+  .showcase-wrapper p {
+    font-size: 1.5rem;
+  }
+
+  .showcase-portfolio-maximized p {
+    font-size: large;
+  }
+
+  #showcase-portfolio-text {
+    font-size: 0.75rem;
+  }
 }
 
-.bubbleCallout-comp-wrapper p {
-  margin: 1vw 1vw 0;
-  background-color: #dbe2ec;
-  width: fit-content;
-  padding: 0 1vw;
-  height: 3vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 30px;
-  color: black;
-  font-family: var(--body-font);
-  font-weight: 500;
+@media screen and (max-width: 768px) {
+  .showcase-wrapper p {
+    font-size: 1rem;
+  }
+
+  .showcase-portfolio-maximized {
+    justify-content: flex-start;
+  }
+
+  .showcase-portfolio-maximized p {
+    font-size: 0.75rem;
+  }
+
+  #showcase-portfolio-text {
+    font-size: 10px;
+  }
+
+  #showcase-portfolio-minimized-title {
+    border-radius: 5px;
+  }
 }
 
 @media screen and (max-width: 425px) {
   .portfolio-comp-wrapper {
     top: -2rem;
   }
+
+
+  .showcase-wrapper img {
+    display: none
+  }
+
+  #showcase-portfolio-minimized-title {
+    font-size: 12px;
+  }
+
+  .showcase-portfolio-maximized p {
+    font-size: 10px
+  }
+
+  #showcase-portfolio-text {
+    font-size: 8px;
+  }
 }
+

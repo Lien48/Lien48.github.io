@@ -65,11 +65,10 @@
 }
 
 .name-vector {
-  position: absolute;
-  top: 7vw;
-  left: -7vw;
-  width: 7vw;
+  width: 4vw;
   height: auto;
+  transform: rotate(35deg);
+  margin-right: 0.5vw;
 }
 
 #name-text-occupation {
@@ -740,6 +739,7 @@
 
   #name-text-occupation {
     font-size: 3rem;
+    justify-content: center;
   }
 
   /*CSS for IconBar component */

@@ -5,12 +5,30 @@ import "animate.css";
 //https://animate.style/
 import Timeline from "../../assets/Timeline.png";
 
+//Bubble call outs regarding skills
+const BubbleCallOuts = () => {
+    const skills = [
+        "Chartered Professional Accountant",
+        "No-Code Developer",
+        "Front-End Development",
+    ];
+
+    return (
+        <div className={"bubbleCallout-comp-wrapper"}>
+            {skills.map((x) => (
+                <p>{x}</p>
+            ))}
+        </div>
+    );
+};
+
 const Story = () => {
     return (
-        <div className="story-comp-wrapper">
+        <div className="story-comp-wrapper" id="experienceLink">
             <h1>
                 What's <span id="story-title">My Story</span>
             </h1>
+            <BubbleCallOuts />
             <div className="story-timeline-wrapper">
                 {/*Left column denoting employment history */}
                 <div className="story-timeline-column">

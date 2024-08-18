@@ -6,11 +6,23 @@ import "animate.css";
 import TN100D from "../../assets/TN100D Dashboard.svg";
 import ArrowButton from "../../assets/Arrow Button.png";
 import ArrowButtonFilled from "../../assets/Arrow Button Filled.png";
+import TrufflowDashboard from "../../assets/Trufflow Dashboard.jpg";
 
 const Portfolio = () => {
-    //Function to handle mouse click - Redirects to Portfolio page
+    /*Function to handle mouse click - Redirects to Portfolio page
     const handleRedirectPortfolio = () => {
         window.location.href = "./projects";
+    };
+    */
+
+    //Function to handle mouse click - Open Trufflow website
+    const handleRedirectTrufflow = () => {
+        window.open("https://trufflow.com", "_blank");
+    };
+
+    //Function to handle mouse click - Open TN100D website
+    const handleRedirectTN100D = () => {
+        window.open("https://thenext100days.app", "_blank");
     };
 
     //Portfolio component to showcase individual portfolio projects
@@ -40,7 +52,7 @@ const Portfolio = () => {
                         style={{ height: "100%", width: "100%" }}>
                         <div className="showcase-portfolio-minimized">
                             <img src={ArrowButton} alt="" id="button-arrow" />
-                            <p>{name}</p>
+                            <p id="showcase-portfolio-minimized-title">{name}</p>
                         </div>
                     </div>
                 ) : (
@@ -61,24 +73,6 @@ const Portfolio = () => {
         );
     };
 
-    //Bubble call outs regarding skills
-    const BubbleCallOuts = () => {
-        const skills = [
-            "No-Code Developer",
-            "Front-End Development",
-            "Chartered Professional Accountant",
-            "Digital Creator",
-        ];
-
-        return (
-            <div className={"bubbleCallout-comp-wrapper"}>
-                {skills.map((x) => (
-                    <p>{x}</p>
-                ))}
-            </div>
-        );
-    };
-
     return (
         <div className="portfolio-comp-wrapper" id="portfolioLink">
             <div className="portfolio-comp-header">
@@ -87,28 +81,27 @@ const Portfolio = () => {
                         Let's Have a Look at My <span style={{ color: "#BBE8F2" }}>Projects</span>
                     </p>
                 </div>
-                <button className="button" onClick={handleRedirectPortfolio}>
-                    See All
-                </button>
+                {/*Placeholder button to redirect to Portfolio page if multi page portfolio website is to be made.
+                    <button className="button" onClick={handleRedirectPortfolio}>
+                        See All
+                    </button>
+                */}
             </div>
             <div className="portfolio-comp-header">
-                <a href="https://thenext100days.app">
+                <div className="portfolio-comp-header-inner" onClick={handleRedirectTrufflow}>
                     <PortfolioShowcase
-                        style={{ backgroundImage: `url("${TN100D}")` }}
+                        style={{ backgroundImage: `url("${TrufflowDashboard}")` }}
                         name="Trufflow"
                         description="App monitoring stack for IT value management."
                     />
-                </a>
-                <a href="https://thenext100days.app">
+                </div>
+                <div className="portfolio-comp-header-inner" onClick={handleRedirectTN100D}>
                     <PortfolioShowcase
                         style={{ backgroundImage: `url("${TN100D}")` }}
                         name="The Next 100 Days"
                         description="Productivity app to facilitate 100 days of mindfulness, self-care, and productivity."
                     />
-                </a>
-            </div>
-            <div className="portfolio-comp-header">
-                <BubbleCallOuts />
+                </div>
             </div>
         </div>
     );
