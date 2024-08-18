@@ -1,3 +1,17 @@
+/* General */
+ul {
+    margin-left: 1.25vw;
+}
+
+li {
+    padding-left: 0.5vw;
+}
+
+#text-align_left {
+    text-align: end;
+}
+
+/* CSS for Timeline */
 .story-comp-wrapper {
     display: flex;
     flex-direction: column;
@@ -14,7 +28,14 @@
     color: rgb(38, 133, 191);
 }
 
-.story-timeline-wrapper {
+.story-timeline-wrapper-outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1vw 4vw;
+}
+
+.story-timeline-wrapper-inner {
     display: flex;
     flex-direction: row;
     column-gap: 4rem;
@@ -30,39 +51,126 @@
     flex-direction: column;
     padding: 1rem 0.5rem;
     row-gap: 10px;
-    min-height: 170px;
-    max-width: 450px;
+    min-height: 180px;
+    max-width: 90%;
 }
 
 .story-timeline-textbox h2 {
     color: #344054;
 }
 
-/* CSS for BubbleCallOuts component */
+.story-timeline-textbox-subheading {
+    font-weight: 600;
+}
+
+/* Emoji bullet points */
+#rocketshipBulletPoints {
+    list-style-type: "\1F680";
+}
+
+#brainBulletPoints {
+    list-style-type: "\1F9E0";
+}
+
+#checkmarkBulletPoints {
+    list-style-type: "\2714";
+}
+
+/* BubbleCallOuts component */
 .bubbleCallout-comp-wrapper {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
     justify-content: center;
-    padding: 0 2vw 3vw 2vw;
-  }
-  
-  .bubbleCallout-comp-wrapper p {
-    margin: 1vw 1vw 0;
+    width: 100%;
+    padding: 0 2vw 3vw 0vw;
+    gap: 1vw;
+}
+
+.bubbleCallout-comp-wrapper p {
     background-color: #dbe2ec;
     width: fit-content;
     padding: 0 1vw;
-    height: 3vw;
+    height: auto;
     display: flex;
-    justify-content: center;
+    text-align: center;
     align-items: center;
     border-radius: 30px;
     color: black;
     font-family: var(--body-font);
     font-weight: 500;
-  }
+    padding: 1vw 2vw;
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .story-timeline-wrapper-inner {
+        column-gap: 1rem;
+    }
+
     .story-comp-wrapper h1 {
         font-size: 2.5rem;
     }
-  }
+
+    .bubbleCallout-comp-wrapper {
+        gap: 2vw;
+    }
+
+    .bubbleCallout-comp-wrapper p {
+        font-size: 0.75rem;
+    }
+
+    .story-timeline-textbox h2 {
+        font-size: 1rem;
+    }
+
+    .story-timeline-textbox-subheading {
+        font-size: 0.8rem;
+    }
+
+    li {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .story-comp-wrapper h1 {
+        font-size: 2rem;
+    }
+
+    .story-timeline-textbox h2 {
+        font-size: 1rem;
+    }
+
+    .story-timeline-textbox p {
+        font-size: 12px;
+    }
+
+    .story-timeline-textbox-subheading {
+        font-size: 0.8rem;
+    }
+
+    .story-timeline-textbox h2 {
+        font-size: 15px;
+    }
+
+    .story-timeline-textbox-subheading {
+        font-size: 12px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    #rightColumn {
+        width: min-content;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .story-timeline-textbox h2 {
+        font-size: 15px;
+    }
+
+    .story-timeline-textbox-subheading {
+        display: none;
+    }
+}

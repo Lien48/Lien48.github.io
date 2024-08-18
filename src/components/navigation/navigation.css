@@ -56,8 +56,6 @@
   transition: color 0.4s;
 }
 
-
-
 .nav__item a {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
@@ -65,12 +63,6 @@
 }
 
 .nav__link:hover {
-  color: var(--first-color);
-  background: #bbe8f2;
-  border-radius: 60px;
-}
-
-.nav__item:hover {
   color: var(--first-color);
   background: #bbe8f2;
   border-radius: 60px;

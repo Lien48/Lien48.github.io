@@ -99,7 +99,7 @@ const Portfolio = () => {
                     <PortfolioShowcase
                         style={{ backgroundImage: `url("${TN100D}")` }}
                         name="The Next 100 Days"
-                        description="Productivity app to facilitate 100 days of mindfulness, self-care, and productivity."
+                        description="Productivity app to promote 100 days of habit formation. Balances productivity, mindfulness, and self-care."
                     />
                 </div>
             </div>
