@@ -42,11 +42,11 @@ const Navigation = () => {
         <header className="header">
             <nav className="nav container">
                 <div className={`nav__menu ${showMenu ? "show-menu" : ""}`} id="nav-menu">
-                    <ul className="nav__list">
+                    <ul className="nav__list" id="removeMargins">
                         <li className="nav__item">
                             <a
                                 href="#portfolioLink"
-                                className="nav__link"
+                                className={`nav__link ${showMenu ? "nav__link__show__menu" : ""}`}
                                 onClick={closeMenuOnMobile}>
                                 Projects
                             </a>
@@ -54,7 +54,7 @@ const Navigation = () => {
                         <li className="nav__item">
                             <a
                                 href="#experienceLink"
-                                className="nav__link"
+                                className={`nav__link ${showMenu ? "nav__link__show__menu" : ""}`}
                                 onClick={closeMenuOnMobile}>
                                 Experience
                             </a>
@@ -76,7 +76,10 @@ const Navigation = () => {
                     </NavLink>
                     <ul className="nav__list">
                         <li className="nav__item">
-                            <a href="#aboutLink" className="nav__link" onClick={closeMenuOnMobile}>
+                            <a
+                                href="#aboutLink"
+                                className={`nav__link ${showMenu ? "nav__link__show__menu" : ""}`}
+                                onClick={closeMenuOnMobile}>
                                 About
                             </a>
                         </li>
@@ -84,16 +87,7 @@ const Navigation = () => {
                             <NavLink
                                 to="https://ca.linkedin.com/in/lienchueh"
                                 target="_blank"
-                                className={({ isActive }) =>
-                                    `nav__link ${
-                                        //Nested CSS conditionals required for appropriate padding on nav links
-                                        isActive
-                                            ? showMenu
-                                                ? "nav__link__active__menu"
-                                                : "nav__link__active"
-                                            : ""
-                                    }`
-                                }
+                                className={`nav__link ${showMenu ? "nav__link__show__menu" : ""}`}
                                 onClick={closeMenuOnMobile}>
                                 Contact
                             </NavLink>

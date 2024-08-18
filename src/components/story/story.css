@@ -51,7 +51,7 @@ li {
     flex-direction: column;
     padding: 1rem 0.5rem;
     row-gap: 10px;
-    min-height: 180px;
+    min-height: 175px;
     max-width: 90%;
 }
 
@@ -145,7 +145,7 @@ li {
     }
 
     .story-timeline-textbox-subheading {
-        font-size: 0.8rem;
+        display: none;
     }
 
     .story-timeline-textbox h2 {
@@ -168,9 +168,5 @@ li {
 @media screen and (max-width: 375px) {
     .story-timeline-textbox h2 {
         font-size: 15px;
-    }
-
-    .story-timeline-textbox-subheading {
-        display: none;
     }
 }
