@@ -76,6 +76,10 @@ li {
     list-style-type: "\2714";
 }
 
+#ideaBulletPoints {
+    list-style-type: "\1F4A1";
+}
+
 /* BubbleCallOuts component */
 .bubbleCallout-comp-wrapper {
     display: flex;

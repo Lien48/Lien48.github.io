@@ -62,20 +62,20 @@ const Story = () => {
                         <div className="story-timeline-textbox">
                             <h2>Founder</h2>
                             <p className="story-timeline-textbox-subheading">
-                                Building micro-SaaS solutions using no code.
+                                B2B SaaS app monitoring platform for IT value management.
                             </p>
-                            <ul id="rocketshipBulletPoints">
+                            <ul id="ideaBulletPoints">
                                 <li>
                                     Building{" "}
                                     <b>
                                         <a
-                                            href="https://thenext100days.app"
+                                            href="https://trufflow.com"
                                             target="_blank"
                                             rel="noreferrer">
-                                            The Next 100 Days
+                                            Trufflow
                                         </a>
                                     </b>{" "}
-                                    to promote habit formation and mental wellness.
+                                    to help companies create business value by capturing tech value.
                                 </li>
                             </ul>
                         </div>
