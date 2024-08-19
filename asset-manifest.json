@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.46d4af92.css",
-    "main.js": "/static/js/main.111e1075.js",
+    "main.css": "/static/css/main.99f9625a.css",
+    "main.js": "/static/js/main.46ebab30.js",
     "static/js/453.b21437c2.chunk.js": "/static/js/453.b21437c2.chunk.js",
     "static/media/Lien No Background.png": "/static/media/Lien No Background.bafb29abe7cb86af11f6.png",
     "static/media/TN100D Dashboard.svg": "/static/media/TN100D Dashboard.355e83194b9b157b3a2aea3fa634c48f.svg",
@@ -9,12 +9,12 @@
     "static/media/Trufflow Dashboard.jpg": "/static/media/Trufflow Dashboard.78573e7d5e5aacd0021d.jpg",
     "static/media/Lien.jpg": "/static/media/Lien.b5925840b856ee0bd4cc.jpg",
     "index.html": "/index.html",
-    "main.46d4af92.css.map": "/static/css/main.46d4af92.css.map",
-    "main.111e1075.js.map": "/static/js/main.111e1075.js.map",
+    "main.99f9625a.css.map": "/static/css/main.99f9625a.css.map",
+    "main.46ebab30.js.map": "/static/js/main.46ebab30.js.map",
     "453.b21437c2.chunk.js.map": "/static/js/453.b21437c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.46d4af92.css",
-    "static/js/main.111e1075.js"
+    "static/css/main.99f9625a.css",
+    "static/js/main.46ebab30.js"
   ]
 }
