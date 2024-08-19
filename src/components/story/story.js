@@ -16,8 +16,8 @@ const BubbleCallOuts = () => {
 
     return (
         <div className={"bubbleCallout-comp-wrapper"}>
-            {skills.map((x) => (
-                <p>{x}</p>
+            {skills.map((content) => (
+                <p>{content}</p>
             ))}
         </div>
     );

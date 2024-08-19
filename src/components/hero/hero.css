@@ -1,871 +1,886 @@
 /* CSS for entire Hero component */
 .hero-wrapper {
-  padding-top: 7rem;
+    padding-top: 7rem;
 }
 
 @media screen and (max-width: 1023px) {
-  .hero-wrapper {
-    padding-top: 5rem;
-  }
+    .hero-wrapper {
+        padding-top: 5rem;
+    }
 }
 
 /*CSS for Intro component */
 .intro-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vw;
 }
 
 .hello-group {
-  position: relative;
-  margin-bottom: 1vw;
+    position: relative;
+    margin-bottom: 1vw;
 }
 
 .hello-text {
-  border-style: solid;
-  border-radius: 30px;
-  width: fit-content;
-  padding: 5px 15px;
-  font-size: 1.25rem;
+    border-style: solid;
+    border-radius: 30px;
+    width: fit-content;
+    padding: 5px 15px;
+    font-size: 1.25rem;
 }
 
 .hello-text {
-  border-style: solid;
-  border-radius: 30px;
-  width: fit-content;
-  padding: 5px 15px;
-  font-size: 1rem;
+    border-style: solid;
+    border-radius: 30px;
+    width: fit-content;
+    padding: 5px 15px;
+    font-size: 1rem;
 }
 
 .hello-vector {
-  position: absolute;
-  bottom: 1.25rem;
-  left: 4.25rem;
-  width: 2.75rem;
-  height: auto;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 4.25rem;
+    width: 2.75rem;
+    height: auto;
 }
 
 .name-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 
 .name-group p {
-  font-size: 4rem;
-  font-family: var(--title-font);
-  font-weight: 600;
-  color: black;
+    font-size: 4rem;
+    font-family: var(--title-font);
+    font-weight: 600;
+    color: black;
 }
 
 .name-text {
-  display: flex;
+    display: flex;
 }
 
 .name-vector {
-  width: 4vw;
-  height: auto;
-  transform: rotate(35deg);
-  margin-right: 0.5vw;
+    width: 4vw;
+    height: auto;
+    transform: rotate(35deg);
+    margin-right: 0.5vw;
 }
 
 #name-text-occupation {
-  font-family: var(--title-font);
-  font-weight: 600;
-  color: black;
-  display: flex;
-  font-size: 4rem;
-  width: --webkit-fill-available;
+    font-family: var(--title-font);
+    font-weight: 600;
+    color: black;
+    display: flex;
+    font-size: 4rem;
+    padding-right: 3vw;
+    margin-top: -1vw;
 }
 
 /*CSS for Intro component - animated occupation section */
 #animated-heading {
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  -moz-transition: opacity 0.3s ease-in-out;
-  -ms-transition: opacity 0.3s ease-in-out;
-  -o-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
 /*CSS for IconBar component */
 #icon-bar-text-title {
-  font-weight: 600;
-  font-size: 2.25rem;
-  font-family: var(--title-font);
+    font-weight: 600;
+    font-size: 2.25rem;
+    font-family: var(--title-font);
 }
 
 .icon-bar {
-  display: flex;
-  flex-direction: column;
-  margin: 6vw 20% 2vw;
-  z-index: 3;
+    display: flex;
+    flex-direction: column;
+    margin: 6vw 20% 2vw;
+    z-index: 3;
 }
 
 .icon-bar-shifted {
-  position: relative;
-  bottom: 19vw;
+    position: relative;
+    bottom: 19vw;
 }
 
 .icon-bar-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 .icon-bar-icons img {
-  width: 2.5rem; 
-  height: auto; 
-  margin-bottom: 1rem;
+    width: 2.5rem;
+    height: auto;
+    margin-bottom: 1rem;
 }
 
 .icon-bar p {
-  color: black;
-  font-family: var(--body-font);
-  font-size: 1rem;
+    color: black;
+    font-family: var(--body-font);
+    font-size: 1rem;
 }
 
 /*CSS for PhotoArea component */
 .photo-area {
-  display: flex;
-  position: relative;
-  align-items: flex-end;
-  justify-content: center;
-  padding-block-start: 20%;
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    justify-content: center;
+    padding-block-start: 20%;
 }
 
 .photo-area img {
-  position: absolute;
+    position: absolute;
 }
 
 #photoLien {
-  width: 30%;
-  max-width: 30%;
-  bottom: 5%;
-  z-index: 3;
+    width: 30%;
+    max-width: 30%;
+    bottom: 5%;
+    z-index: 3;
 }
 
 #vectorEclipse {
-  width: 60%;
-  z-index: 0;
-  min-width: none;
+    width: 60%;
+    z-index: 0;
+    min-width: none;
 }
 
 /* CSS for PortfolioButton */
 .portfolio-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: -6rem;
-  z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -6rem;
+    z-index: 5;
 }
 
 .portfolio-group {
-  border: solid;
-  border-radius: 70px;
-  display: flex;
-  flex-direction: row;
-  backdrop-filter: blur(7.5px);
-  width: fit-content;
-  position: relative;
-  padding: 0.5rem;
+    border: solid;
+    border-radius: 70px;
+    display: flex;
+    flex-direction: row;
+    backdrop-filter: blur(7.5px);
+    width: fit-content;
+    position: relative;
+    padding: 0.5rem;
 }
 
 .portfolio-button-active {
-  display: flex;
-  flex-direction: row;
-  padding: 0.5rem 2rem;
-  align-items: center;
-  border-radius: 70px;
-  border-color: #2685bf;
-  background-color: #2685bf;
-  border-style: none;
-  transition: padding-left 0.3s ease-in-out;
-  cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 2rem;
+    align-items: center;
+    border-radius: 70px;
+    border-color: #2685bf;
+    background-color: #2685bf;
+    border-style: none;
+    transition: padding-left 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .portfolio-button-active img {
-  width: 20px; 
-  margin-left: 10px;
+    width: 20px;
+    margin-left: 10px;
 }
 
 .portfolio-button-active p {
-  color: white;
-  font: var(--body-font);
-  font-size: 1.25rem;
-  display: flex;
-  align-items: center;
+    color: white;
+    font: var(--body-font);
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
 }
 
 .portfolio-text {
-  color: white;
-  font: var(--body-font);
-  font-size: 1.25rem;
-  display: flex;
-  align-items: center;
-  padding: 0 1rem 0 1rem;
-  background-color: transparent;
-  border-width: 0;
+    color: white;
+    font: var(--body-font);
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    background-color: transparent;
+    border-width: 0;
 }
 
 /* CSS for BackgroundVectors */
 .vector-wrapper-inactive {
-  display: none;
+    display: none;
 }
 
 .vector-wrapper {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  top: -27rem;
-  z-index: 1;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    top: -27rem;
+    z-index: 1;
 }
 
 .vector-wrapper img {
-  position: absolute;
+    position: absolute;
 }
 
 @media screen and (min-width: 2200px) {
-  .photo-area-shifted {
-    margin-top: -15vw;
-  }
+    .photo-area-shifted {
+        margin-top: -15vw;
+    }
 
-  /* Popout Vectors */
-  #photoLien {
-    width: 20%;
-    max-width: 25%;
-    bottom: 3%;
-    z-index: 3;
-  }
+    /* Popout Vectors */
+    #photoLien {
+        width: 20%;
+        max-width: 25%;
+        bottom: 3%;
+        z-index: 3;
+    }
 
-  #vectorEclipse {
-    width: 40%;
-    z-index: 0;
-  }
+    #vectorEclipse {
+        width: 40%;
+        z-index: 0;
+    }
 
-  .vector-wrapper img {
-    transform: scale(1.5);
-  }
+    .vector-wrapper img {
+        transform: scale(1.5);
+    }
 
-  #arrowVector {
-    bottom: 8rem;
-    left: 64rem;
-  }
+    #arrowVector {
+        bottom: 8rem;
+        left: 64rem;
+    }
 
-  #constellationVector {
-    top: 5rem;
-    left: 54rem;
-  }
+    #constellationVector {
+        top: 5rem;
+        left: 54rem;
+    }
 
-  #cloudVector {
-    bottom: 3rem;
-    left: 45rem;
-  }
+    #cloudVector {
+        bottom: 3rem;
+        left: 45rem;
+    }
 
-  #flowerVector {
-    top: 3rem;
-    right: 55rem;
-  }
+    #flowerVector {
+        top: 3rem;
+        right: 55rem;
+    }
 
-  #heartsVector {
-    top: -0.5rem;
-    left: 59rem;
-  }
+    #heartsVector {
+        top: -0.5rem;
+        left: 59rem;
+    }
 
-  #heartBalloonVector {
-    top: 9rem;
-    left: 45rem;
-    rotate: -20deg;
-  }
+    #heartBalloonVector {
+        top: 9rem;
+        left: 45rem;
+        rotate: -20deg;
+    }
 
-  #paperAirplaneVector {
-    top: 10rem;
-    right: 25rem;
-  }
+    #paperAirplaneVector {
+        top: 10rem;
+        right: 25rem;
+    }
 
-  #raincloudVector {
-    top: 3rem;
-    left: 32rem;
-    transform: scaleX(-1);
-  }
+    #raincloudVector {
+        top: 3rem;
+        left: 32rem;
+        transform: scaleX(-1);
+    }
 
-  #swirlVectorLeftTop {
-    top: -3rem;
-    left: 35rem;
-  }
+    #swirlVectorLeftTop {
+        top: -3rem;
+        left: 35rem;
+    }
 
-  #swirlVectorLeftBottom {
-    top: 14rem;
-    left: 35rem;
-  }
+    #swirlVectorLeftBottom {
+        top: 14rem;
+        left: 35rem;
+    }
 
-  #swirlVectorRightTop {
-    top: -5rem;
-    right: 55rem;
-  }
+    #swirlVectorRightTop {
+        top: -5rem;
+        right: 55rem;
+    }
 
-  #swirlVectorRightBottom {
-    top: 15rem;
-    right: 50rem;
-  }
+    #swirlVectorRightBottom {
+        top: 15rem;
+        right: 50rem;
+    }
 
-  #saturnVector {
-    top: 1rem;
-    right: 40rem;
-  }
+    #saturnVector {
+        top: 1rem;
+        right: 40rem;
+    }
 
-  #starVectorLeft {
-    top: 15rem;
-    left: 25rem;
-  }
+    #starVectorLeft {
+        top: 15rem;
+        left: 25rem;
+    }
 
-  #starVectorRight {
-    top: 15rem;
-    right: 60rem;
-  }
+    #starVectorRight {
+        top: 15rem;
+        right: 60rem;
+    }
 
-  #star2Vector {
-    bottom: -0.5rem;
-    left: 25rem;
-  }
+    #star2Vector {
+        bottom: -0.5rem;
+        left: 25rem;
+    }
 
-  #squigglyHeartVector {
-    bottom: 9rem;
-    right: 65rem;
-  }
+    #squigglyHeartVector {
+        bottom: 9rem;
+        right: 65rem;
+    }
 
-  #squiggly2Vector {
-    bottom: 8rem;
-    left: 56rem;
-    transform: rotate(30deg);
-  }
+    #squiggly2Vector {
+        bottom: 8rem;
+        left: 56rem;
+        transform: rotate(30deg);
+    }
 
-  #shootingStarVector {
-    bottom: 6rem;
-    right: 55rem;
-  }
+    #shootingStarVector {
+        bottom: 6rem;
+        right: 55rem;
+    }
 
-  #whirlpoolVector {
-    bottom: 4rem;
-    right: 38rem;
-    rotate: 325deg;
-  }
+    #whirlpoolVector {
+        bottom: 4rem;
+        right: 38rem;
+        rotate: 325deg;
+    }
 }
 
 @media screen and (max-width: 2200px) {
-  #photoLien {
-    width: 25%;
-    max-width: 25%;
-    bottom: 3%;
-    z-index: 3;
-  }
+    #photoLien {
+        width: 25%;
+        max-width: 25%;
+        bottom: 3%;
+        z-index: 3;
+    }
 
-  #vectorEclipse {
-    width: 50%;
-    z-index: 0;
-  }
+    #vectorEclipse {
+        width: 50%;
+        z-index: 0;
+    }
 
-  .vector-wrapper img {
-    transform: scale(1.2);
-  }
+    .vector-wrapper img {
+        transform: scale(1.2);
+    }
 
-  #arrowVector {
-    bottom: 6rem;
-    left: 44rem;
-  }
+    #arrowVector {
+        bottom: 6rem;
+        left: 44rem;
+    }
 
-  #constellationVector {
-    top: -1rem;
-    left: 34rem;
-  }
+    #constellationVector {
+        top: -1rem;
+        left: 34rem;
+    }
 
-  #cloudVector {
-    bottom: 3rem;
-    left: 25rem;
-  }
+    #cloudVector {
+        bottom: 3rem;
+        left: 25rem;
+    }
 
-  #flowerVector {
-    top: 3rem;
-    right: 40rem;
-  }
+    #flowerVector {
+        top: 3rem;
+        right: 40rem;
+    }
 
-  #heartsVector {
-    top: -0.5rem;
-    left: 50rem;
-  }
+    #heartsVector {
+        top: -0.5rem;
+        left: 50rem;
+    }
 
-  #heartBalloonVector {
-    top: 9rem;
-    left: 35rem;
-    rotate: -20deg;
-  }
+    #heartBalloonVector {
+        top: 9rem;
+        left: 35rem;
+        rotate: -20deg;
+    }
 
-  #paperAirplaneVector {
-    top: 10rem;
-    right: 25rem;
-  }
+    #paperAirplaneVector {
+        top: 10rem;
+        right: 25rem;
+    }
 
-  #raincloudVector {
-    top: 3rem;
-    left: 20rem;
-    transform: scaleX(-1);
-  }
+    #raincloudVector {
+        top: 3rem;
+        left: 20rem;
+        transform: scaleX(-1);
+    }
 
-  #swirlVectorLeftTop {
-    top: -6rem;
-    left: 38rem;
-  }
+    #swirlVectorLeftTop {
+        top: -6rem;
+        left: 38rem;
+    }
 
-  #swirlVectorLeftBottom {
-    top: 16rem;
-    left: 35rem;
-  }
+    #swirlVectorLeftBottom {
+        top: 16rem;
+        left: 35rem;
+    }
 
-  #swirlVectorRightTop {
-    top: -3rem;
-    right: 35rem;
-  }
+    #swirlVectorRightTop {
+        top: -3rem;
+        right: 35rem;
+    }
 
-  #swirlVectorRightBottom {
-    top: 16em;
-    right: 25rem;
-  }
+    #swirlVectorRightBottom {
+        top: 16em;
+        right: 25rem;
+    }
 
-  #saturnVector {
-    top: 1rem;
-    right: 30rem;
-  }
+    #saturnVector {
+        top: 1rem;
+        right: 30rem;
+    }
 
-  #starVectorLeft {
-    top: 15rem;
-    left: 25rem;
-  }
+    #starVectorLeft {
+        top: 15rem;
+        left: 25rem;
+    }
 
-  #starVectorRight {
-    top: 10rem;
-    right: 35rem;
-  }
+    #starVectorRight {
+        top: 10rem;
+        right: 35rem;
+    }
 
-  #star2Vector {
-    bottom: -0.5rem;
-    left: 25rem;
-  }
+    #star2Vector {
+        bottom: -0.5rem;
+        left: 25rem;
+    }
 
-  #squigglyHeartVector {
-    bottom: 5rem;
-    right: 45rem;
-  }
+    #squigglyHeartVector {
+        bottom: 5rem;
+        right: 45rem;
+    }
 
-  #squiggly2Vector {
-    bottom: 8rem;
-    left: 56rem;
-    transform: rotate(30deg);
-  }
+    #squiggly2Vector {
+        bottom: 8rem;
+        left: 56rem;
+        transform: rotate(30deg);
+    }
 
-  #shootingStarVector {
-    bottom: 6rem;
-    right: 55rem;
-  }
+    #shootingStarVector {
+        bottom: 6rem;
+        right: 55rem;
+    }
 
-  #whirlpoolVector {
-    bottom: 4rem;
-    right: 35rem;
-    rotate: 325deg;
-  }
+    #whirlpoolVector {
+        bottom: 4rem;
+        right: 35rem;
+        rotate: 325deg;
+    }
 }
 
 @media screen and (max-width: 1800px) {
-  #arrowVector {
-    top: 9rem;
-    left: 15rem;
-    transform: rotate(330deg);
-  }
+    #arrowVector {
+        top: 9rem;
+        left: 15rem;
+        transform: rotate(330deg);
+    }
 
-  #whirlpoolVector {
-    bottom: -3rem;
-    right: 15rem;
-    rotate: 325deg;
-  }
+    #whirlpoolVector {
+        bottom: -3rem;
+        right: 15rem;
+        rotate: 325deg;
+    }
 
-  #shootingStarVector {
-    bottom: 1rem;
-    right: 25rem;
-  }
+    #shootingStarVector {
+        bottom: 1rem;
+        right: 25rem;
+    }
 
-  #squiggly2Vector {
-    bottom: -1rem;
-    left: 15rem;
-  }
+    #squiggly2Vector {
+        bottom: -1rem;
+        left: 15rem;
+    }
 
-  #squigglyHeartVector {
-    top: 5rem;
-    right: 15rem;
-  }
+    #squigglyHeartVector {
+        top: 5rem;
+        right: 15rem;
+    }
 
-  #saturnVector {
-    top: -10rem;
-    right: 40rem;
-  }
+    #saturnVector {
+        top: -10rem;
+        right: 40rem;
+    }
 }
 
 @media screen and (max-width: 1440px) {
-  #arrowVector {
-    bottom: 1rem;
-    left: 34rem;
-  }
+    #arrowVector {
+        bottom: 1rem;
+        left: 34rem;
+    }
 
-  #constellationVector {
-    top: 5rem;
-    left: 24rem;
-  }
+    #constellationVector {
+        top: 5rem;
+        left: 24rem;
+    }
 
-  #cloudVector {
-    bottom: 3rem;
-    left: 25rem;
-  }
+    #cloudVector {
+        bottom: 3rem;
+        left: 25rem;
+    }
 
-  #flowerVector {
-    top: 3rem;
-    right: 25rem;
-  }
+    #flowerVector {
+        top: 3rem;
+        right: 25rem;
+    }
 
-  #heartsVector {
-    top: -0.5rem;
-    left: 29rem;
-  }
+    #heartsVector {
+        top: -0.5rem;
+        left: 29rem;
+    }
 
-  #heartBalloonVector {
-    top: 11rem;
-    left: 22rem;
-    rotate: -20deg;
-  }
+    #heartBalloonVector {
+        top: 11rem;
+        left: 22rem;
+        rotate: -20deg;
+    }
 
-  #raincloudVector {
-    top: 3rem;
-    left: 12rem;
-    transform: scaleX(-1);
-  }
+    #raincloudVector {
+        top: 3rem;
+        left: 12rem;
+        transform: scaleX(-1);
+    }
 
-  #swirlVectorLeftTop {
-    top: 15rem;
-    left: 30rem;
-  }
+    #swirlVectorLeftTop {
+        top: 15rem;
+        left: 30rem;
+    }
 
-  #swirlVectorLeftBottom {
-    top: 18rem;
-    left: 19rem;
-  }
+    #swirlVectorLeftBottom {
+        top: 18rem;
+        left: 19rem;
+    }
 
-  #swirlVectorRightTop {
-    top: 10rem;
-    right: 15rem;
-  }
+    #swirlVectorRightTop {
+        top: 10rem;
+        right: 15rem;
+    }
 
-  #swirlVectorRightBottom {
-    top: 18rem;
-    right: 20rem;
-  }
+    #swirlVectorRightBottom {
+        top: 18rem;
+        right: 20rem;
+    }
 
-  #saturnVector {
-    top: 1rem;
-    right: 15rem;
-  }
+    #saturnVector {
+        top: 1rem;
+        right: 15rem;
+    }
 
-  #starVectorLeft {
-    top: 15rem;
-    left: 15rem;
-  }
+    #starVectorLeft {
+        top: 15rem;
+        left: 15rem;
+    }
 
-  #starVectorRight {
-    top: 17rem;
-    right: 25rem;
-  }
+    #starVectorRight {
+        top: 17rem;
+        right: 25rem;
+    }
 
-  #star2Vector {
-    bottom: -0.5rem;
-    left: 25rem;
-  }
+    #star2Vector {
+        bottom: -0.5rem;
+        left: 25rem;
+    }
 
-  #squigglyHeartVector {
-    bottom: 1rem;
-    right: 30rem;
-  }
+    #squigglyHeartVector {
+        bottom: 1rem;
+        right: 30rem;
+    }
 
-  #squiggly2Vector {
-    top: 13rem;
-    left: 7rem;
-  }
-  #paperAirplaneVector {
-    top: 10rem;
-    right: 5rem;
-  }
+    #squiggly2Vector {
+        top: 13rem;
+        left: 7rem;
+    }
+    #paperAirplaneVector {
+        top: 10rem;
+        right: 5rem;
+    }
 
-  #shootingStarVector {
-    top: 8rem;
-    right: 21rem;
-  }
+    #shootingStarVector {
+        top: 8rem;
+        right: 21rem;
+    }
 
-  #whirlpoolVector {
-    bottom: -1rem;
-    right: 22rem;
-    rotate: 325deg;
-  }
+    #whirlpoolVector {
+        bottom: -1rem;
+        right: 22rem;
+        rotate: 325deg;
+    }
 }
 
 @media screen and (max-width: 1200px) {
-  .vector-wrapper img {
-    transform: scale(0.8);
-  }
+    .vector-wrapper img {
+        transform: scale(0.8);
+    }
 
-  #cloudVector {
-    bottom: -4rem;
-    left: 20rem;
-    position: absolute;
-  }
+    #cloudVector {
+        bottom: -4rem;
+        left: 20rem;
+        position: absolute;
+    }
 
-  #shootingStarVector {
-    top: 5rem;
-    right: 16rem;
-  }
+    #shootingStarVector {
+        top: 5rem;
+        right: 16rem;
+    }
 
-  #saturnVector {
-    top: -3rem;
-    right: 13rem;
-  }
+    #saturnVector {
+        top: -3rem;
+        right: 13rem;
+    }
 
-  #squigglyHeartVector {
-    bottom: -6rem;
-    right: 20rem;
-  }
+    #squigglyHeartVector {
+        bottom: -6rem;
+        right: 20rem;
+    }
 
-  #whirlpoolVector {
-    bottom: -1rem;
-    right: 22rem;
-    rotate: 325deg;
-  }
+    #whirlpoolVector {
+        bottom: -1rem;
+        right: 22rem;
+        rotate: 325deg;
+    }
 
-  #arrowVector {
-    bottom: -5rem;
-    left: 18rem;
-  }
+    #arrowVector {
+        bottom: -5rem;
+        left: 18rem;
+    }
 
-  #star2Vector {
-    top: 1rem;
-    left: 40rem;
-  }
+    #star2Vector {
+        top: 1rem;
+        left: 40rem;
+    }
 
-  #heartBalloonVector {
-    top: 9rem;
-    left: 20rem;
-    rotate: -20deg;
-  }
+    #heartBalloonVector {
+        top: 9rem;
+        left: 20rem;
+        rotate: -20deg;
+    }
 
-  #raincloudVector {
-    top: 3rem;
-    left: 15rem;
-    transform: scale(0.7);
-  }
+    #raincloudVector {
+        top: 3rem;
+        left: 15rem;
+        transform: scale(0.7);
+    }
 }
 
 @media screen and (max-width: 1024px) {
-  .icon-bar {
-    margin: 6vw 10% 2vw;
-  }
+    .icon-bar {
+        margin: 6vw 10% 2vw;
+    }
 
-  .hello-vector {
-    left: 4.5rem;
-    width: 2rem;
-  }
+    .hello-vector {
+        left: 4.5rem;
+        width: 2rem;
+    }
 
-  /*Vector configuration section */
-  .vector-wrapper img {
-    transform: scale(0.7);
-  }
+    /*Vector configuration section */
+    .vector-wrapper img {
+        transform: scale(0.7);
+    }
 
-  #arrowVector {
-    bottom: -9rem;
-    left: 21rem;
-  }
+    #arrowVector {
+        bottom: -9rem;
+        left: 21rem;
+    }
 
-  #cloudVector {
-    bottom: -6em;
-    left: 14rem;
-  }
+    #cloudVector {
+        bottom: -6em;
+        left: 14rem;
+    }
 
-  #flowerVector {
-    top: 12rem;
-    left: 18rem;
-    transform: scaleX(-1);
-  }
+    #flowerVector {
+        top: 12rem;
+        left: 18rem;
+        transform: scaleX(-1);
+    }
 
-  #heartBalloonVector {
-    top: 4rem;
-    left: 16rem;
-    rotate: -20deg;
-  }
+    #heartBalloonVector {
+        top: 4rem;
+        left: 16rem;
+        rotate: -20deg;
+    }
 
-  #paperAirplaneVector {
-    top: 14rem;
-    right: 5rem;
-  }
+    #paperAirplaneVector {
+        top: 14rem;
+        right: 5rem;
+    }
 
-  #raincloudVector {
-    top: 6rem;
-    left: 8rem;
-    transform: scaleX(-0.7);
-  }
+    #raincloudVector {
+        top: 6rem;
+        left: 8rem;
+        transform: scaleX(-0.7);
+    }
 
-  #star2Vector {
-    bottom: 2rem;
-    left: 32rem;
-  }
+    #star2Vector {
+        bottom: 2rem;
+        left: 32rem;
+    }
 
-  #whirlpoolVector {
-    bottom: -17rem;
-    right: 8rem;
-    rotate: 325deg;
-  }
+    #whirlpoolVector {
+        bottom: -17rem;
+        right: 8rem;
+        rotate: 325deg;
+    }
 
-  /*CSS for Intro component */
-  .name-group p {
-    font-size: 3rem;
-  }
+    /*CSS for Intro component */
+    .name-group p {
+        font-size: 3rem;
+    }
 
-  #name-text-occupation {
-    font-size: 3rem;
-    justify-content: center;
-  }
+    #name-text-occupation {
+        font-size: 3rem;
+        justify-content: center;
+    }
 
-  /*CSS for IconBar component */
-  #icon-bar-text-title {
-    font-size: 1.75rem;
-  }
+    /*CSS for IconBar component */
+    #icon-bar-text-title {
+        font-size: 1.75rem;
+    }
 
-  .icon-bar p {
-    font-size: 0.9rem;
-  }
+    .icon-bar p {
+        font-size: 0.9rem;
+    }
 
-  /* CSS for PortfolioButton */
-  .portfolio-button-active p {
-    font-size: 1rem;
-    letter-spacing: 1px;
-  }
+    /* CSS for PortfolioButton */
+    .portfolio-button-active p {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
 
-  .portfolio-group button {
-    font-size: 1rem;
-  }
+    .portfolio-group button {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
-  .vector-wrapper img {
-    display: none;
-  }
+    .vector-wrapper img {
+        display: none;
+    }
 
-  .hello-text {
-    font-size: 0.75rem;
-  }
+    .hello-text {
+        font-size: 0.75rem;
+    }
 
-  .hello-vector {
-    left: 3.75rem;
-    width: 1.5rem;
-  }
+    .hello-vector {
+        left: 3.75rem;
+        width: 1.5rem;
+    }
 
-  .photo-area-shifted {
-    margin-top: -20vw;
-  }
+    .photo-area-shifted {
+        margin-top: -20vw;
+    }
 
-  /*CSS for Intro component */
-   .name-group p {
-    font-size: 2rem;
-  }
+    /*CSS for Intro component */
+    .name-group p {
+        font-size: 2rem;
+    }
 
-  #name-text-occupation {
-    font-size: 2rem;
-  }
+    #name-text-occupation {
+        font-size: 2rem;
+    }
 
-  /*CSS for IconBar component */
-   #icon-bar-text-title {
-    font-size: 1.25rem;
-  }
+    /*CSS for IconBar component */
+    #icon-bar-text-title {
+        font-size: 1.25rem;
+    }
 
-  .icon-bar p {
-    font-size: 0.75rem;
-  }
+    .icon-bar p {
+        font-size: 0.75rem;
+    }
 
-  .icon-bar-icons img {
-    width: 1.75rem; 
-  }
+    .icon-bar-icons img {
+        width: 1.75rem;
+    }
 
-  /* CSS for PortfolioButton */ 
-  .portfolio-button-active {
-    padding: 0.25rem 1rem;
-  }
+    /* CSS for PortfolioButton */
+    .portfolio-button-active {
+        padding: 0.25rem 1rem;
+    }
 
-  .portfolio-button-active p {
-    font-size: 0.75rem;
-    letter-spacing: 1.5px;
-  }
+    .portfolio-button-active p {
+        font-size: 0.75rem;
+        letter-spacing: 1.5px;
+    }
 
-  .portfolio-button-active img {
-    width: 17px;
-  }
+    .portfolio-button-active img {
+        width: 17px;
+    }
 
-  .portfolio-group button {
-    font-size: 0.75rem;
-    letter-spacing: 1px;
-  }
+    .portfolio-group button {
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+    }
 }
 
 @media screen and (max-width: 425px) {
-  .hello-text {
-    padding: 5px 10px;
-    font-size: 0.5rem;
-  }
+    .hello-text {
+        padding: 5px 10px;
+        font-size: 0.5rem;
+    }
 
-  .hello-vector {
-    left: 2.5rem;
-    width: 1.25rem;
-    bottom: 1rem;
-  }
+    .hello-vector {
+        left: 2.5rem;
+        width: 1.25rem;
+        bottom: 1rem;
+    }
 
-  /*CSS for Intro component */
-  .name-group p {
-    font-size: 1.5rem;
-  }
+    /*CSS for Intro component */
+    .name-group p {
+        font-size: 1.5rem;
+    }
 
-  #name-text-occupation {
-    font-size: 1.5rem;
-  }
+    #name-text-occupation {
+        font-size: 1.5rem;
+    }
 
-  /*CSS for IconBar component */
-  #icon-bar-text-title {
-    font-size: 1rem;
-  }
+    /*CSS for IconBar component */
+    #icon-bar-text-title {
+        font-size: 1rem;
+    }
 
-  .icon-bar p {
-    font-size: 0.6rem;
-  }
+    .icon-bar p {
+        font-size: 0.6rem;
+    }
 
-  .icon-bar-icons img {
-    display: none; 
-  }
+    .icon-bar-icons img {
+        display: none;
+    }
 
-  /* CSS for PortfolioButton */
-  .portfolio-group {
-    border: none;
-  }
+    /* CSS for PortfolioButton */
+    .portfolio-wrapper {
+        top: -3.7rem;
+    }
 
-  .portfolio-button-active {
-    display: none;
-  }
+    .portfolio-group {
+        border-width: thin;
+    }
 
-  .portfolio-text {
-    display: none
-  }
+    #hideInMobile {
+        display: none;
+    }
+
+    #highlightOnMobile {
+        padding: 0rem 0.5rem;
+        border-radius: 70px;
+        font-weight: 600;
+    }
+
+    .portfolio-button-active {
+        font-size: 10px;
+    }
+
+    .portfolio-text {
+        font-size: 10px;
+    }
 }

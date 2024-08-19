@@ -1,57 +1,57 @@
 .button {
-  border-radius: 70px;
-  background-color: #2685bf;
-  color: white;
-  padding: 1vw 2vw;
-  border-color: transparent;
-  font-family: var(--body-font);
-  font-weight: 600;
-  margin: 4vw;
-  font-size: 1.25vw;
-  cursor: pointer;
+    border-radius: 70px;
+    background-color: #2685bf;
+    color: white;
+    padding: 1vw 2vw;
+    border-color: transparent;
+    font-family: var(--body-font);
+    font-weight: 600;
+    margin: 4vw;
+    font-size: 1.25vw;
+    cursor: pointer;
 }
 
 .button:hover {
-  background-color: #5fb6d9;
+    background-color: #5fb6d9;
 }
 
 .portfolio-comp-wrapper {
-  background-image: url("../../assets/abstract\ metallic\ blue\ texture\ background.png");
-  height: fit-content; 
-  border-radius: 30px;
-  position: relative;
-  top: -5rem;
-  z-index: 4;
-  display: flex;
-  flex-direction: column;
-  margin: 0 2rem;
-  padding-bottom: 2rem;
+    background-image: url("../../assets/abstract\ metallic\ blue\ texture\ background.png");
+    height: fit-content;
+    border-radius: 30px;
+    position: relative;
+    top: -5rem;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    padding-bottom: 4vw;
 }
 
 .portfolio-comp-header {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  height: fit-content;
-  width: 100%;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: fit-content;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .portfolio-comp-text {
-  padding: 3vw 4vw 2vw 4vw;
+    padding: 3vw 4vw 2vw 4vw;
 }
 
 .portfolio-comp-text p {
-  color: white;
-  font-family: var(--body-font);
-  font-weight: 600;
-  font-size: 3vw;
-  line-height: 1.5;
+    color: white;
+    font-family: var(--body-font);
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 1.5;
 }
 
 /* Link wrapper for PortfolioShowcase component */
 .portfolio-comp-header-inner {
-  width: 50%;
+    width: 50%;
 }
 
 /* CSS for PortfolioShowcase component */
@@ -67,64 +67,64 @@
 }
 
 #button-arrow {
-  padding: 1vw;
-  align-self: flex-end;
+    padding: 1vw;
+    align-self: flex-end;
 }
 
 .showcase-wrapper p {
-  color: white;
-  font-family: var(--body-font);
-  font-weight: 700;
-  font-size: 2rem;
-  border-radius: 20px;
+    color: white;
+    font-family: var(--body-font);
+    font-weight: 700;
+    font-size: 2rem;
+    border-radius: 20px;
 }
 
 .showcase-wrapper img {
-  width: 6vw;
-  height: auto;
+    width: 6vw;
+    height: auto;
 }
 
 .showcase-portfolio-minimized {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
 }
 
 #showcase-portfolio-minimized-title {
-  backdrop-filter: blur(5px);
-  border-radius: 30px;
-  padding: 0.5vw 1.5vw;
-  margin: 1vw;
-  background-color: #000000c9;
-  width: fit-content;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    padding: 0.5vw 1.5vw;
+    margin: 1vw;
+    background-color: #000000c9;
+    width: fit-content;
 }
 
 .showcase-portfolio-maximized {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
 
 .showcase-portfolio-details {
-  display: flex;
-  flex-direction: column;
-  margin: 1vw;
-  padding: 1vw;
-  border-radius: 10px;
-  background-color: #000000c9;
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+    padding: 1vw;
+    border-radius: 10px;
+    background-color: #000000c9;
 }
 
 #showcase-portfolio-text {
-  font-size: medium;
-  font-family: var(--body-font);
-  font-weight: 400;
+    font-size: medium;
+    font-family: var(--body-font);
+    font-weight: 400;
 }
 
 .showcase-portfolio-text-name {
@@ -136,61 +136,59 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .showcase-wrapper p {
-    font-size: 1.5rem;
-  }
+    .showcase-wrapper p {
+        font-size: 1.5rem;
+    }
 
-  .showcase-portfolio-maximized p {
-    font-size: large;
-  }
+    .showcase-portfolio-maximized p {
+        font-size: large;
+    }
 
-  #showcase-portfolio-text {
-    font-size: 0.75rem;
-  }
+    #showcase-portfolio-text {
+        font-size: 0.75rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
-  .showcase-wrapper p {
-    font-size: 1rem;
-  }
+    .showcase-wrapper p {
+        font-size: 1rem;
+    }
 
-  .showcase-portfolio-maximized {
-    justify-content: flex-start;
-  }
+    .showcase-portfolio-maximized {
+        justify-content: flex-start;
+    }
 
-  .showcase-portfolio-maximized p {
-    font-size: 0.75rem;
-  }
+    .showcase-portfolio-maximized p {
+        font-size: 0.75rem;
+    }
 
-  #showcase-portfolio-text {
-    font-size: 10px;
-  }
+    #showcase-portfolio-text {
+        font-size: 10px;
+    }
 
-  #showcase-portfolio-minimized-title {
-    border-radius: 5px;
-  }
+    #showcase-portfolio-minimized-title {
+        border-radius: 5px;
+    }
 }
 
 @media screen and (max-width: 425px) {
-  .portfolio-comp-wrapper {
-    top: -2rem;
-  }
+    .portfolio-comp-wrapper {
+        top: -3.25rem;
+    }
 
+    .showcase-wrapper img {
+        display: none;
+    }
 
-  .showcase-wrapper img {
-    display: none
-  }
+    #showcase-portfolio-minimized-title {
+        font-size: 12px;
+    }
 
-  #showcase-portfolio-minimized-title {
-    font-size: 12px;
-  }
+    .showcase-portfolio-maximized p {
+        font-size: 10px;
+    }
 
-  .showcase-portfolio-maximized p {
-    font-size: 10px
-  }
-
-  #showcase-portfolio-text {
-    font-size: 8px;
-  }
+    #showcase-portfolio-text {
+        font-size: 8px;
+    }
 }
-

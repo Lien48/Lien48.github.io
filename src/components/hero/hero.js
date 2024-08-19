@@ -41,7 +41,7 @@ const Hero = () => {
     };
 
     const Intro = () => {
-        const occupations = ["Entrepreneur", "Accountant", "No Code Developer", "Web Developer"];
+        const occupations = ["Entrepreneur", "Finance Leader", "No Code Developer"];
 
         const WordFader = ({ occupations }) => {
             const [currentIndex, setCurrentIndex] = useState(0);
@@ -147,7 +147,7 @@ const Hero = () => {
 
         //Function to handle mouse click - Portfolio
         const handleRedirectPortfolio = () => {
-            window.location.href = "./projects";
+            window.location.href = "#portfolioLink";
         };
 
         //Function to handle mouse click - Connect
@@ -161,6 +161,7 @@ const Hero = () => {
                     {isActive ? (
                         <button
                             className="portfolio-button-active"
+                            id="hideInMobile"
                             onMouseEnter={handleMouseEnter}
                             onClick={handleRedirectPortfolio}>
                             <p>Portfolio</p>
@@ -172,7 +173,10 @@ const Hero = () => {
                         </button>
                     )}
                     {isActive ? (
-                        <button className="portfolio-text" onMouseEnter={handleMouseLeave}>
+                        <button
+                            className="portfolio-text"
+                            id="highlightOnMobile"
+                            onMouseEnter={handleMouseLeave}>
                             Connect
                         </button>
                     ) : (

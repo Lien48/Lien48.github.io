@@ -1,0 +1,108 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw 4vw;
+    align-items: center;
+    gap: 2vw;
+}
+
+.wrapper h1 {
+    font-family: var(--title-font);
+    color: #374151;
+}
+
+.wrapper p {
+    color: #6b7280;
+    line-height: 1.75rem;
+    text-align: justify;
+    font-size: large;
+}
+
+.wrapper ul {
+    list-style-type: "\1F680";
+    padding-left: 1vw;
+}
+
+.wrapper li {
+    padding-bottom: 10px;
+    font-size: large;
+}
+
+/* CSS for emoji bullet points */
+#sparklesBulletPoints {
+    list-style-type: "\2728";
+}
+
+#balloonBulletPoints {
+    list-style-type: "\1F388";
+}
+
+/* CSS for About Details component */
+.contentWrapper {
+    display: flex;
+    flex-direction: row;
+    border: solid;
+    border-color: #e5e7eb;
+    border-width: 1px;
+}
+
+.contentWrapper figure {
+    flex-basis: 33.33%;
+}
+
+.contentWrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.contentDetails {
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    flex-basis: 66.66%;
+    gap: 1vw;
+    background-color: #f8f8f8;
+}
+
+.contentWrapper h4 {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+@media screen and (max-width: 768px) {
+    .contentWrapper {
+        flex-direction: column;
+    }
+
+    .contentWrapper figure {
+        display: flex;
+        justify-content: center;
+        background-color: #f8f8f8;
+        padding-top: 3vw;
+    }
+
+    .contentWrapper img {
+        max-width: 30%;
+        border-radius: 100px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .wrapper ul {
+        padding-left: 5vw;
+    }
+
+    .wrapper li {
+        font-size: medium;
+    }
+
+    .contentWrapper h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 1vw;
+    }
+
+    .contentWrapper p {
+        font-size: 1rem;
+    }
+}
